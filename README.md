@@ -38,9 +38,13 @@ npm run build
 
 > **Note:** Node.js is required. On this server use the available alt-nodejs binaries under `/opt/alt/`.
 
-## Auto-deploy
+## AI Workflow
 
-Auto-deploy is enabled via `webhook.php`. Pushing to the main branch triggers an automatic pull and cache clear.
+All code edits and site changes are made via **Claude Code**, Anthropic's AI coding agent.
+
+Changes are issued through a **Telegram bot** interface — no manual SSH or FTP. The AI receives instructions over Telegram, makes the edits, and the site updates automatically.
+
+Deployment is fully automated — pushing to the main branch triggers an auto-deploy via `webhook.php`, so the live site reflects every change instantly without human intervention.
 
 ## Content Management
 

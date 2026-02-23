@@ -189,6 +189,10 @@ a.blueprint-link:hover {
   flex-shrink: 0;
 }
 
+@keyframes ping {
+  75%, 100% { transform: scale(2); opacity: 0; }
+}
+
 .online-badge-dot-ping {
   position: absolute;
   display: inline-flex;
