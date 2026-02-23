@@ -13,12 +13,12 @@
     <div class="relative max-w-5xl mx-auto px-6 lg:px-8 py-24 text-center">
       <!-- Badge pill -->
       <div class="mb-10 flex justify-center">
-        <div class="inline-flex items-center gap-3 px-5 py-2.5 rounded-full bg-navy-800/90 border border-green-500/30 backdrop-blur-sm shadow-lg shadow-green-500/10 ring-1 ring-inset ring-white/5">
-          <span class="relative flex h-2.5 w-2.5 shrink-0">
-            <span class="absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-60 animate-ping"></span>
-            <span class="relative inline-flex h-2.5 w-2.5 rounded-full bg-green-400" style="box-shadow: 0 0 8px 2px rgba(74, 222, 128, 0.55);"></span>
+        <div class="online-badge-pill">
+          <span class="online-badge-dot">
+            <span class="online-badge-dot-ping"></span>
+            <span class="online-badge-dot-core"></span>
           </span>
-          <span class="text-sm font-semibold text-gray-100 leading-none tracking-wide"><?= $page->badge() ?></span>
+          <span class="online-badge-text"><?= $page->badge() ?></span>
         </div>
       </div>
 
