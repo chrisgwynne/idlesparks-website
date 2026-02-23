@@ -35,3 +35,12 @@ h1,h2,h3,h4,h5,h6{font-family:var(--font-heading);}
 .tool-icon:hover{background:rgba(74,143,238,.2);border-color:rgba(74,143,238,.5);color:#fff;transform:translateY(-2px);}
 .tool-icon::after{content:attr(data-tooltip);position:absolute;bottom:calc(100% + 8px);left:50%;background:rgba(19,26,46,.97);border:1px solid rgba(74,143,238,.3);color:#e5e7eb;font-family:"JetBrains Mono",ui-monospace,monospace;font-size:.65rem;font-weight:500;letter-spacing:.08em;white-space:nowrap;padding:.3rem .65rem;border-radius:.375rem;opacity:0;pointer-events:none;transition:opacity .15s ease,transform .15s ease;transform:translateX(-50%) translateY(4px);}
 .tool-icon:hover::after{opacity:1;transform:translateX(-50%) translateY(0);}
+
+/* Tools grid */
+.tools-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:.75rem;}
+@media(min-width:768px){.tools-grid{grid-template-columns:repeat(8,1fr);}}
+@media(min-width:1024px){.tools-grid{grid-template-columns:repeat(10,1fr);}}
+.tool-card{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:.5rem;padding:1rem .5rem;border-radius:.75rem;background:rgba(19,26,46,.8);border:1px solid rgba(74,143,238,.18);color:#6ea8f7;cursor:default;transition:background .2s,border-color .2s,box-shadow .2s,transform .2s;}
+.tool-card:hover{background:rgba(74,143,238,.08);border-color:rgba(74,143,238,.45);box-shadow:0 0 18px rgba(74,143,238,.15);transform:translateY(-3px);}
+.tool-card svg{width:1.75rem;height:1.75rem;flex-shrink:0;}
+.tool-card span{font-family:"JetBrains Mono",ui-monospace,monospace;font-size:.58rem;font-weight:500;letter-spacing:.04em;text-align:center;color:#6ea8f7;line-height:1.3;}
