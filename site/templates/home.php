@@ -43,11 +43,11 @@
       <!-- CTA buttons -->
       <div class="mt-10 flex flex-wrap justify-center gap-4">
         <a href="<?= url('work') ?>" class="inline-flex items-center gap-2 px-8 py-3.5 bg-blueprint-600 hover:bg-blueprint-500 text-white text-sm font-medium rounded-lg transition-all duration-200 shadow-lg shadow-blueprint-600/20">
-          View Our Work
+          See What I've Built
           <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
         </a>
         <a href="<?= url('contact') ?>" class="inline-flex items-center gap-2 px-8 py-3.5 border border-blueprint-600/50 hover:border-blueprint-500/50 text-blueprint-400 hover:text-white text-sm font-medium rounded-lg transition-all duration-200">
-          Get in Touch
+          Say Hello
         </a>
       </div>
 
@@ -72,7 +72,7 @@
     <div class="absolute inset-0 blueprint-grid-light"></div>
     <div class="relative max-w-7xl mx-auto px-6 lg:px-8">
       <div class="mb-16">
-        <span class="tech-label">// Services</span>
+        <span class="tech-label">// What I'm Into</span>
         <h2 class="mt-4 text-3xl md:text-5xl font-bold text-white"><?= $page->services_headline() ?></h2>
         <?php if ($page->services_text()->isNotEmpty()): ?>
         <p class="mt-4 text-gray-200 text-lg max-w-2xl"><?= $page->services_text() ?></p>

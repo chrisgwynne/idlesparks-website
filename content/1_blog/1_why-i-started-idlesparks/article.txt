@@ -1,0 +1,39 @@
+Title: Why I Started Idle Sparks
+
+----
+
+Date: 2026-02-23
+
+----
+
+Tags: Personal, Building, AI
+
+----
+
+Intro: I didn't plan to start a studio. I just kept building things and at some point it made sense to give it a name.
+
+----
+
+Text:
+
+Honest answer? I don't really know when it officially started. There wasn't a moment where I sat down, wrote a business plan and decided to launch a company. It was more like I kept building stuff, kept figuring things out, and at some point someone asked "so what do you do?" and I needed a better answer than "I tinker with things."
+
+Idle Sparks is that answer.
+
+I've been obsessed with AI for a while — not in a hype-cycle kind of way, more in a "I genuinely cannot stop thinking about what's possible" kind of way. I started playing with language models back when they were mostly a curiosity, building little tools for myself, automating annoying things, seeing how far I could push a prompt before it fell over. It was a hobby. Then the models got good. Really good. And the hobby started producing things that were actually useful.
+
+The turning point was probably when I realised I could build things I had no business building. I'm not a designer, but I was shipping interfaces that looked decent. I'm not a backend engineer by training, but I was wiring up systems that actually worked. The AI wasn't doing it for me exactly — I was still making all the decisions — but it was filling in all the gaps between what I knew and what I needed to know.
+
+That changes things.
+
+When you can move that fast, being a one-person operation stops feeling like a limitation. It starts feeling like an advantage. No meetings about meetings. No waiting for sign-off. No "let's circle back on that." Just: idea, build, ship. See if it sticks.
+
+Idle Sparks is built around that. The whole thing — this site included — is managed through a Telegram bot and Claude Code. I send a message, the AI makes the change, the site updates. I haven't opened an FTP client in months. The workflow is just... better.
+
+I don't know exactly what this becomes. Maybe I keep doing client work and experimenting on the side. Maybe one of the experiments turns into something bigger. I'm not trying to raise a round or hire a team. Right now I'm just enjoying building things that work, working on problems that are interesting, and seeing what happens when you remove most of the friction between an idea and something real.
+
+If that sounds like something you want to be involved in — as a client, a collaborator, or just someone who wants to follow along — I'm easy to find.
+
+----
+
+Uuid: idlesparks001blog
