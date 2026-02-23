@@ -1,8 +1,8 @@
-Title: Contact
+Title: Say Hello
 
 ----
 
-Text: Have a problem that AI can solve? Let's talk. We're always looking for hard problems and ambitious teams.
+Text: Got a weird idea? A hard problem? Something you want to build but aren't sure where to start? Let's chat. No pitch decks needed — just tell me what you're trying to do.
 
 ----
 
@@ -10,11 +10,11 @@ Email: hello@idlesparks.com
 
 ----
 
-Phone: 
+Phone:
 
 ----
 
-Address: Remote-first company, worldwide.
+Address: Remote. Probably got coffee on.
 
 ----
 

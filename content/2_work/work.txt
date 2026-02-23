@@ -2,7 +2,7 @@ Title: Work
 
 ----
 
-Text: AI products we've built and shipped. Each one solving a real problem at production scale.
+Text: Things I've built, tinkered with, and shipped. Some are client work, some are personal experiments. All of them taught me something.
 
 ----
 

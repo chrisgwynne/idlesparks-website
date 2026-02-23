@@ -2,44 +2,44 @@ Title: Home
 
 ----
 
-Badge: AI-Powered Company
+Badge: Solo AI Studio · Always Online
 
 ----
 
-Headline: 1 AI Agent.
+Headline: Tinkering with AI.
 
 ----
 
-Headline-accent: Infinite Output.
+Headline-accent: Shipping what sticks.
 
 ----
 
-Subheadline: We build AI products that research, reason, and execute — autonomously and at scale. Every model tuned. Every pipeline production-grade.
+Subheadline: I'm a solo builder using AI as my dev team, design partner, and rubber duck. I work on interesting problems, build things I'm curious about, and ship when it's ready.
 
 ----
 
 Stats:
 
 -
-  value: 6
-  label: AI Products Shipped
+  value: "01"
+  label: Builder
 -
-  value: 10M+
-  label: Tasks Processed
+  value: 24/7
+  label: Always On
 -
-  value: <1s
-  label: Avg Response Time
+  value: Zero
+  label: Meetings Needed
 -
-  value: 99.9%
-  label: Uptime
+  value: "∞"
+  label: Curiosity
 
 ----
 
-Services-headline: What We Build
+Services-headline: What I'm Into
 
 ----
 
-Services-text: Intelligent systems designed to solve real problems. From autonomous agents to predictive models.
+Services-text: A mix of client work and personal experiments. If it involves AI, automation, or building something from scratch — I'm probably already thinking about it.
 
 ----
 
@@ -47,40 +47,40 @@ Services:
 
 -
   title: AI Agents
-  description: Autonomous agents that research, plan, and execute multi-step tasks end-to-end without human intervention.
+  description: Things that do the thinking for you. Autonomous workflows, research pipelines, task runners — systems that keep going when you stop.
   icon: M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4
 -
-  title: NLP APIs
-  description: Production-ready natural language processing — extraction, summarisation, classification, and generation at scale.
+  title: Web & Apps
+  description: Fast, clean, and actually shipped. I build sites and tools that work well and look good without taking forever.
   icon: M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z
 -
-  title: Computer Vision
-  description: Image and video analysis pipelines for quality control, object detection, OCR, and visual search.
-  icon: M15 12a3 3 0 11-6 0 3 3 0 016 0z M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z
--
-  title: Data Pipelines
-  description: Robust ETL and streaming architectures that clean, transform, and route data in real time.
+  title: Automation
+  description: If you're doing something the same way more than twice, let's make it run itself. Time is the one thing you can't get back.
   icon: M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4
 -
-  title: Predictive Models
-  description: Machine learning models for forecasting, anomaly detection, recommendation, and decision support.
-  icon: M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z
+  title: Prototypes & Experiments
+  description: Sometimes I build things just to see if they work. Sometimes those become products. Either way, something interesting comes out of it.
+  icon: M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z
 -
   title: AI Consulting
-  description: Strategic advisory for teams adopting AI. We help you identify high-impact use cases and build the right infrastructure.
+  description: Not sure where to start with AI? I'll help you figure out what's worth building, what's hype, and what'll actually save you time.
   icon: M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01
+-
+  title: Building in Public
+  description: I share what I'm working on, what's breaking, and what I'm learning. Follow along if you're into that kind of thing.
+  icon: M15 12a3 3 0 11-6 0 3 3 0 016 0z M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z
 
 ----
 
-Featured-headline: Our Products
+Featured-headline: Things I've Built
 
 ----
 
-Cta-headline: Got a Problem AI Can Solve?
+Cta-headline: Got something interesting?
 
 ----
 
-Cta-text: We build intelligent systems that ship fast and scale hard. Let's talk about what AI can do for your business.
+Cta-text: I like hard problems, weird ideas, and projects where the brief starts with "I have no idea how to do this, but..." Drop me a message — I reply quickly.
 
 ----
 
