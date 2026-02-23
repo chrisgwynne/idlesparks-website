@@ -220,6 +220,137 @@ a.blueprint-link:hover {
   box-shadow: 0 0 8px 2px rgba(74, 222, 128, 0.55);
 }
 
+/* ============================================
+   Project article content styles
+   ============================================ */
+
+.project-text h2 {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  font-weight: 500;
+  color: var(--color-blueprint-400);
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  margin-top: 3.5rem;
+  margin-bottom: 1.25rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.project-text h2::before {
+  content: '//';
+  color: var(--color-blueprint-600);
+  flex-shrink: 0;
+}
+
+.project-text h2::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(90deg, rgba(74, 143, 238, 0.35) 0%, transparent 100%);
+}
+
+.project-text h3 {
+  font-family: var(--font-heading);
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+  padding-left: 0.875rem;
+  border-left: 2px solid var(--color-blueprint-500);
+}
+
+.project-text p {
+  color: #d1d5db;
+  line-height: 1.85;
+  margin-bottom: 1.25rem;
+  font-size: 0.9375rem;
+}
+
+.project-text strong {
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.project-text a {
+  color: var(--color-blueprint-400);
+  text-decoration: none;
+  border-bottom: 1px dashed rgba(110, 168, 247, 0.4);
+  transition: color 0.2s, border-color 0.2s;
+}
+
+.project-text a:hover {
+  color: var(--color-blueprint-300);
+  border-bottom-color: var(--color-blueprint-300);
+}
+
+.project-text ul {
+  margin-bottom: 1.25rem;
+  padding-left: 0;
+  list-style: none;
+}
+
+.project-text ul li {
+  position: relative;
+  padding-left: 1.5rem;
+  color: #d1d5db;
+  line-height: 1.8;
+  margin-bottom: 0.4rem;
+  font-size: 0.9375rem;
+}
+
+.project-text ul li::before {
+  content: '—';
+  position: absolute;
+  left: 0;
+  color: var(--color-blueprint-500);
+  font-family: var(--font-mono);
+}
+
+.project-text ol {
+  margin-bottom: 1.25rem;
+  padding-left: 0;
+  list-style: none;
+  counter-reset: item;
+}
+
+.project-text ol li {
+  position: relative;
+  padding-left: 2rem;
+  color: #d1d5db;
+  line-height: 1.8;
+  margin-bottom: 0.4rem;
+  font-size: 0.9375rem;
+  counter-increment: item;
+}
+
+.project-text ol li::before {
+  content: counter(item, decimal-leading-zero) '.';
+  position: absolute;
+  left: 0;
+  color: var(--color-blueprint-500);
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+}
+
+.project-text code {
+  font-family: var(--font-mono);
+  font-size: 0.8125rem;
+  color: var(--color-blueprint-300);
+  background: rgba(74, 143, 238, 0.1);
+  padding: 0.15em 0.45em;
+  border-radius: 4px;
+  border: 1px solid rgba(74, 143, 238, 0.2);
+}
+
+.project-text img {
+  border-radius: 0.75rem;
+  width: 100%;
+}
+
+/* .online-badge-text below */
 .online-badge-text {
   font-size: 0.8125rem;
   font-weight: 600;

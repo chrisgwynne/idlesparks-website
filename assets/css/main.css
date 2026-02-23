@@ -11,3 +11,21 @@
 /* Blueprint theme font overrides */
 :root,:host{--font-sans:"Space Mono",ui-monospace,monospace;--font-heading:"Space Grotesk",ui-sans-serif,system-ui,sans-serif;}
 h1,h2,h3,h4,h5,h6{font-family:var(--font-heading);}
+
+/* Project article content styles */
+.project-text h2{font-family:"JetBrains Mono",ui-monospace,monospace;font-size:.7rem;font-weight:500;color:#6ea8f7;text-transform:uppercase;letter-spacing:.18em;margin-top:3.5rem;margin-bottom:1.25rem;display:flex;align-items:center;gap:.75rem;}
+.project-text h2::before{content:'//';color:#3575d4;flex-shrink:0;}
+.project-text h2::after{content:'';flex:1;height:1px;background:linear-gradient(90deg,rgba(74,143,238,.35) 0%,transparent 100%);}
+.project-text h3{font-family:"Space Grotesk",ui-sans-serif,system-ui,sans-serif;font-size:1.15rem;font-weight:600;color:#fff;margin-top:2rem;margin-bottom:.75rem;padding-left:.875rem;border-left:2px solid #4a8fee;}
+.project-text p{color:#d1d5db;line-height:1.85;margin-bottom:1.25rem;font-size:.9375rem;}
+.project-text strong{color:#fff;font-weight:600;}
+.project-text a{color:#6ea8f7;text-decoration:none;border-bottom:1px dashed rgba(110,168,247,.4);transition:color .2s,border-color .2s;}
+.project-text a:hover{color:#a3cbfd;border-bottom-color:#a3cbfd;}
+.project-text ul{margin-bottom:1.25rem;padding-left:0;list-style:none;}
+.project-text ul li{position:relative;padding-left:1.5rem;color:#d1d5db;line-height:1.8;margin-bottom:.4rem;font-size:.9375rem;}
+.project-text ul li::before{content:'—';position:absolute;left:0;color:#4a8fee;font-family:"JetBrains Mono",ui-monospace,monospace;}
+.project-text ol{margin-bottom:1.25rem;padding-left:0;list-style:none;counter-reset:item;}
+.project-text ol li{position:relative;padding-left:2rem;color:#d1d5db;line-height:1.8;margin-bottom:.4rem;font-size:.9375rem;counter-increment:item;}
+.project-text ol li::before{content:counter(item,decimal-leading-zero) '.';position:absolute;left:0;color:#4a8fee;font-family:"JetBrains Mono",ui-monospace,monospace;font-size:.75rem;}
+.project-text code{font-family:"JetBrains Mono",ui-monospace,monospace;font-size:.8125rem;color:#a3cbfd;background:rgba(74,143,238,.1);padding:.15em .45em;border-radius:4px;border:1px solid rgba(74,143,238,.2);}
+.project-text img{border-radius:.75rem;width:100%;}
