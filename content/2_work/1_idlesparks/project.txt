@@ -1,0 +1,69 @@
+Title: IdleSparks
+
+----
+
+Category: AI Studio
+
+----
+
+Year: 2026
+
+----
+
+Description: The IdleSparks website itself — a fully AI-built, AI-deployed, and AI-maintained production site running on a custom Blueprint theme. No traditional dev workflow. No manual deploys. Just intent turned into code.
+
+----
+
+Client: Own Brand
+
+----
+
+Role: Architecture, Design, AI Engineering
+
+----
+
+Tags: Claude Code, AI Agents, Telegram, Kirby CMS, Tailwind CSS v4, Space Grotesk, Space Mono, Blueprint Theme, Auto-Deploy
+
+----
+
+Url-link: https://idlesparks.com
+
+----
+
+Cover: cover.png
+
+----
+
+Text:
+
+## What It Is
+
+IdleSparks.com is the studio's own website — and it doubles as a live proof of concept. Every pixel, every layout decision, every line of CSS was produced by AI. Not assisted by AI. Produced by it. The human role was direction: describe what you want, and the system builds it.
+
+## The Workflow
+
+The entire site is managed through a Telegram bot connected to Claude Code, Anthropic's AI coding agent. Instructions are sent as plain messages — "add a pulsing green dot to the badge", "change the fonts to match the blueprint theme", "write a full project review" — and the AI reads the codebase, makes the changes, and commits them. A webhook on the server picks up the push and deploys automatically.
+
+There is no FTP. No SSH sessions. No code editor open on anyone's laptop. The site is edited the same way you'd ask a colleague to fix something.
+
+## The Stack
+
+Built on Kirby CMS for its flat-file simplicity and PHP flexibility — no database to manage, no ORM to wrestle with. Styles are written in Tailwind CSS v4 with a custom Blueprint theme: a dark navy base with blueprint-blue grid lines, technical monospace labels, and crisp architectural typography.
+
+Fonts were chosen to reinforce the theme. **Space Grotesk** for headings — geometric, precise, and technical without being cold. **Space Mono** for body copy — a deliberate choice to make reading feel like reviewing documentation or source code. **JetBrains Mono** for the fine-print tech labels that annotate sections like a draftsman's blueprint.
+
+## Design Language
+
+The visual language draws from architectural blueprints and technical drawings. A repeating grid sits behind every hero section. Section labels use a monospace uppercase style prefixed with `//` like code comments. Cards have a faint technical border that brightens on hover with a subtle glow.
+
+The hero badge — "AI Powered Company" — carries a pulsing green dot, signalling that the system is live and online. It's a small detail, but it communicates the studio's ethos: this isn't a brochure site, it's a running system.
+
+## Why It Matters
+
+Most studios talk about AI. This one runs on it. The website isn't just a showcase of work — it is the work. Every update to it is a demonstration of what the studio can do for clients: automate the mundane, accelerate the deliberate, and ship without the usual overhead.
+
+The fact that a full redesign — new fonts, a new badge, a new project entry with a live screenshot taken programmatically — can happen in a single conversation is the point. That's the capability IdleSparks brings to every engagement.
+
+----
+
+Uuid: 1idlesparks0001x
