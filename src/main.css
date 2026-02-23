@@ -31,12 +31,18 @@
   --color-grid-line-strong: rgba(74, 143, 238, 0.22);
 
   /* Font families */
-  --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  --font-sans: 'Space Mono', ui-monospace, monospace;
+  --font-heading: 'Space Grotesk', ui-sans-serif, system-ui, sans-serif;
   --font-mono: 'JetBrains Mono', ui-monospace, monospace;
 
   /* Custom spacing */
   --spacing-18: 4.5rem;
   --spacing-22: 5.5rem;
+}
+
+/* Heading font — Space Grotesk for architectural/technical feel */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
 }
 
 /* Blueprint grid background pattern */
