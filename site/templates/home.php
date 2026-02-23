@@ -100,17 +100,32 @@
     <div class="absolute inset-0 blueprint-grid-light"></div>
     <div class="relative max-w-7xl mx-auto px-6 lg:px-8">
 
-      <div class="mb-12">
+      <div class="mb-16">
         <span class="tech-label">// Tools I Tinker With</span>
         <h2 class="mt-4 text-3xl md:text-5xl font-bold text-white">The stack that makes it possible.</h2>
-        <p class="mt-4 text-gray-300 text-lg max-w-2xl">Not a sponsor list. Just the things I actually reach for every day.</p>
       </div>
 
       <div class="tools-grid">
 
         <!-- Row 1 -->
         <div class="tool-card">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3c-1.5 0-2.5.8-3 2-.4.9-.3 2 .2 2.8L7.5 18h9l-1.7-10.2c.5-.8.6-1.9.2-2.8C14.5 3.8 13.5 3 12 3zM9 18v1.5a3 3 0 006 0V18"/></svg>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <!-- Antennae -->
+            <path stroke-linecap="round" d="M9.5 4.5L7 1M14.5 4.5L17 1"/>
+            <path stroke-linecap="round" d="M10.5 4L9 2.5M13.5 4L15 2.5"/>
+            <!-- Body -->
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9 5c0-1 1.3-2 3-2s3 1 3 2l1 8H8L9 5z"/>
+            <!-- Left claw -->
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9 7.5C7.5 6.5 5 7 4.5 9S6 11.5 7.5 11"/>
+            <path stroke-linecap="round" d="M9 9C8 10.5 5.5 10.5 5 9.5"/>
+            <!-- Right claw -->
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 7.5C16.5 6.5 19 7 19.5 9S18 11.5 16.5 11"/>
+            <path stroke-linecap="round" d="M15 9C16 10.5 18.5 10.5 19 9.5"/>
+            <!-- Legs -->
+            <path stroke-linecap="round" d="M9.5 10l-2 1.5M9.5 12l-2 1M14.5 10l2 1.5M14.5 12l2 1"/>
+            <!-- Tail fan -->
+            <path stroke-linecap="round" d="M8.5 13l-2 4M10.5 13.5l-1 3.5M12 13.5V17M13.5 13.5l1 3.5M15.5 13l2 4"/>
+          </svg>
           <span>OpenClaw</span>
         </div>
 
