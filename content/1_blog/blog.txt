@@ -1,8 +1,8 @@
-Title: Blog
+Title: Writing
 
 ----
 
-Text: Research notes, engineering deep-dives, and lessons learned from building AI products in production.
+Text: Things I'm thinking about, stuff I've figured out, and the occasional rant. No editorial calendar. Just writing when I have something worth saying.
 
 ----
 

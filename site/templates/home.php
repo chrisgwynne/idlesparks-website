@@ -95,12 +95,100 @@
     </div>
   </section>
 
+  <!-- Tools I Tinker With -->
+  <section class="relative py-24 lg:py-32 border-t border-blueprint-600/30">
+    <div class="absolute inset-0 blueprint-grid-light"></div>
+    <div class="relative max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="mb-12">
+        <span class="tech-label">// Tools I Tinker With</span>
+        <h2 class="mt-4 text-3xl md:text-5xl font-bold text-white">The stack that makes it possible.</h2>
+        <p class="mt-4 text-gray-300 text-lg max-w-2xl">Not a sponsor list. Just the things I actually reach for every day.</p>
+      </div>
+
+      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+
+        <!-- Claude -->
+        <div class="blueprint-card rounded-xl p-5 group flex flex-col gap-3">
+          <div class="flex items-center gap-3">
+            <span class="w-9 h-9 flex-shrink-0 flex items-center justify-center rounded-lg bg-blueprint-500/20 text-blueprint-400 font-mono text-xs font-bold group-hover:bg-blueprint-500/30 transition-colors">CL</span>
+            <span class="font-semibold text-white text-sm">Claude</span>
+          </div>
+          <p class="text-xs text-gray-400 leading-relaxed">My AI co-pilot. Writes code, thinks through problems, builds this site.</p>
+        </div>
+
+        <!-- Kirby CMS -->
+        <div class="blueprint-card rounded-xl p-5 group flex flex-col gap-3">
+          <div class="flex items-center gap-3">
+            <span class="w-9 h-9 flex-shrink-0 flex items-center justify-center rounded-lg bg-blueprint-500/20 text-blueprint-400 font-mono text-xs font-bold group-hover:bg-blueprint-500/30 transition-colors">KI</span>
+            <span class="font-semibold text-white text-sm">Kirby CMS</span>
+          </div>
+          <p class="text-xs text-gray-400 leading-relaxed">Flat-file CMS. No database, no drama. Content lives in text files.</p>
+        </div>
+
+        <!-- Tailwind CSS -->
+        <div class="blueprint-card rounded-xl p-5 group flex flex-col gap-3">
+          <div class="flex items-center gap-3">
+            <span class="w-9 h-9 flex-shrink-0 flex items-center justify-center rounded-lg bg-blueprint-500/20 text-blueprint-400 font-mono text-xs font-bold group-hover:bg-blueprint-500/30 transition-colors">TW</span>
+            <span class="font-semibold text-white text-sm">Tailwind CSS</span>
+          </div>
+          <p class="text-xs text-gray-400 leading-relaxed">Utility-first CSS. Style fast, ship faster, stop arguing about naming things.</p>
+        </div>
+
+        <!-- PHP -->
+        <div class="blueprint-card rounded-xl p-5 group flex flex-col gap-3">
+          <div class="flex items-center gap-3">
+            <span class="w-9 h-9 flex-shrink-0 flex items-center justify-center rounded-lg bg-blueprint-500/20 text-blueprint-400 font-mono text-xs font-bold group-hover:bg-blueprint-500/30 transition-colors">PHP</span>
+            <span class="font-semibold text-white text-sm">PHP</span>
+          </div>
+          <p class="text-xs text-gray-400 leading-relaxed">Old reliable. Underrated. Gets the job done without the ceremony.</p>
+        </div>
+
+        <!-- Python -->
+        <div class="blueprint-card rounded-xl p-5 group flex flex-col gap-3">
+          <div class="flex items-center gap-3">
+            <span class="w-9 h-9 flex-shrink-0 flex items-center justify-center rounded-lg bg-blueprint-500/20 text-blueprint-400 font-mono text-xs font-bold group-hover:bg-blueprint-500/30 transition-colors">PY</span>
+            <span class="font-semibold text-white text-sm">Python</span>
+          </div>
+          <p class="text-xs text-gray-400 leading-relaxed">For ML, scripts, automation, and anything that needs to actually crunch numbers.</p>
+        </div>
+
+        <!-- GitHub -->
+        <div class="blueprint-card rounded-xl p-5 group flex flex-col gap-3">
+          <div class="flex items-center gap-3">
+            <span class="w-9 h-9 flex-shrink-0 flex items-center justify-center rounded-lg bg-blueprint-500/20 text-blueprint-400 font-mono text-xs font-bold group-hover:bg-blueprint-500/30 transition-colors">GH</span>
+            <span class="font-semibold text-white text-sm">GitHub</span>
+          </div>
+          <p class="text-xs text-gray-400 leading-relaxed">Where the code lives. Push to main, site updates. That simple.</p>
+        </div>
+
+        <!-- Telegram -->
+        <div class="blueprint-card rounded-xl p-5 group flex flex-col gap-3">
+          <div class="flex items-center gap-3">
+            <span class="w-9 h-9 flex-shrink-0 flex items-center justify-center rounded-lg bg-blueprint-500/20 text-blueprint-400 font-mono text-xs font-bold group-hover:bg-blueprint-500/30 transition-colors">TG</span>
+            <span class="font-semibold text-white text-sm">Telegram</span>
+          </div>
+          <p class="text-xs text-gray-400 leading-relaxed">My command interface. I run the whole site through a Telegram bot.</p>
+        </div>
+
+        <!-- Cloudflare -->
+        <div class="blueprint-card rounded-xl p-5 group flex flex-col gap-3">
+          <div class="flex items-center gap-3">
+            <span class="w-9 h-9 flex-shrink-0 flex items-center justify-center rounded-lg bg-blueprint-500/20 text-blueprint-400 font-mono text-xs font-bold group-hover:bg-blueprint-500/30 transition-colors">CF</span>
+            <span class="font-semibold text-white text-sm">Cloudflare</span>
+          </div>
+          <p class="text-xs text-gray-400 leading-relaxed">DNS, caching, protection. The quiet thing keeping everything fast.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
   <!-- Featured Work Preview -->
   <section class="relative py-24 lg:py-32 border-t border-blueprint-600/30">
     <div class="max-w-7xl mx-auto px-6 lg:px-8">
       <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
         <div>
-          <span class="tech-label">// Selected Projects</span>
+          <span class="tech-label">// Things I've Built</span>
           <h2 class="mt-4 text-3xl md:text-5xl font-bold text-white"><?= $page->featured_headline() ?></h2>
         </div>
         <a href="<?= url('work') ?>" class="text-sm text-blueprint-400 hover:text-blueprint-300 transition-colors flex items-center gap-2">
@@ -144,12 +232,12 @@
     <div class="absolute inset-0 blueprint-grid"></div>
     <div class="absolute inset-0 bg-gradient-to-t from-navy-900 via-transparent to-navy-900"></div>
     <div class="relative max-w-4xl mx-auto px-6 lg:px-8 text-center">
-      <span class="tech-label">// Start a Project</span>
+      <span class="tech-label">// Let's Build Something</span>
       <h2 class="mt-4 text-3xl md:text-5xl font-bold text-white"><?= $page->cta_headline() ?></h2>
       <p class="mt-6 text-lg text-gray-200 max-w-2xl mx-auto"><?= $page->cta_text() ?></p>
       <div class="mt-10">
         <a href="<?= url('contact') ?>" class="inline-flex items-center gap-2 px-10 py-4 bg-blueprint-600 hover:bg-blueprint-500 text-white font-medium rounded-lg transition-all duration-200 shadow-lg shadow-blueprint-600/20">
-          Let's Talk
+          Drop me a message
           <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
         </a>
       </div>

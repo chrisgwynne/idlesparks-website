@@ -35,15 +35,7 @@
   <!-- Article Content -->
   <section class="relative py-12">
     <div class="max-w-3xl mx-auto px-6 lg:px-8">
-      <article class="prose prose-invert prose-lg max-w-none
-                      prose-headings:text-white prose-headings:font-bold
-                      prose-p:text-gray-200 prose-p:leading-relaxed
-                      prose-a:text-blueprint-400 prose-a:no-underline hover:prose-a:text-blueprint-300
-                      prose-strong:text-white
-                      prose-code:text-blueprint-400 prose-code:font-mono
-                      prose-pre:bg-navy-600 prose-pre:border prose-pre:border-blueprint-600/40
-                      prose-blockquote:border-blueprint-500 prose-blockquote:text-gray-200
-                      prose-img:rounded-xl">
+      <article class="project-text">
         <?= $page->text()->kirbytext() ?>
       </article>
 
