@@ -105,80 +105,17 @@
         <p class="mt-4 text-gray-300 text-lg max-w-2xl">Not a sponsor list. Just the things I actually reach for every day.</p>
       </div>
 
-      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-
-        <!-- Claude -->
-        <div class="blueprint-card rounded-xl p-5 group flex flex-col gap-3">
-          <div class="flex items-center gap-3">
-            <span class="w-9 h-9 flex-shrink-0 flex items-center justify-center rounded-lg bg-blueprint-500/20 text-blueprint-400 font-mono text-xs font-bold group-hover:bg-blueprint-500/30 transition-colors">CL</span>
-            <span class="font-semibold text-white text-sm">Claude</span>
-          </div>
-          <p class="text-xs text-gray-400 leading-relaxed">My AI co-pilot. Writes code, thinks through problems, builds this site.</p>
-        </div>
-
-        <!-- Kirby CMS -->
-        <div class="blueprint-card rounded-xl p-5 group flex flex-col gap-3">
-          <div class="flex items-center gap-3">
-            <span class="w-9 h-9 flex-shrink-0 flex items-center justify-center rounded-lg bg-blueprint-500/20 text-blueprint-400 font-mono text-xs font-bold group-hover:bg-blueprint-500/30 transition-colors">KI</span>
-            <span class="font-semibold text-white text-sm">Kirby CMS</span>
-          </div>
-          <p class="text-xs text-gray-400 leading-relaxed">Flat-file CMS. No database, no drama. Content lives in text files.</p>
-        </div>
-
-        <!-- Tailwind CSS -->
-        <div class="blueprint-card rounded-xl p-5 group flex flex-col gap-3">
-          <div class="flex items-center gap-3">
-            <span class="w-9 h-9 flex-shrink-0 flex items-center justify-center rounded-lg bg-blueprint-500/20 text-blueprint-400 font-mono text-xs font-bold group-hover:bg-blueprint-500/30 transition-colors">TW</span>
-            <span class="font-semibold text-white text-sm">Tailwind CSS</span>
-          </div>
-          <p class="text-xs text-gray-400 leading-relaxed">Utility-first CSS. Style fast, ship faster, stop arguing about naming things.</p>
-        </div>
-
-        <!-- PHP -->
-        <div class="blueprint-card rounded-xl p-5 group flex flex-col gap-3">
-          <div class="flex items-center gap-3">
-            <span class="w-9 h-9 flex-shrink-0 flex items-center justify-center rounded-lg bg-blueprint-500/20 text-blueprint-400 font-mono text-xs font-bold group-hover:bg-blueprint-500/30 transition-colors">PHP</span>
-            <span class="font-semibold text-white text-sm">PHP</span>
-          </div>
-          <p class="text-xs text-gray-400 leading-relaxed">Old reliable. Underrated. Gets the job done without the ceremony.</p>
-        </div>
-
-        <!-- Python -->
-        <div class="blueprint-card rounded-xl p-5 group flex flex-col gap-3">
-          <div class="flex items-center gap-3">
-            <span class="w-9 h-9 flex-shrink-0 flex items-center justify-center rounded-lg bg-blueprint-500/20 text-blueprint-400 font-mono text-xs font-bold group-hover:bg-blueprint-500/30 transition-colors">PY</span>
-            <span class="font-semibold text-white text-sm">Python</span>
-          </div>
-          <p class="text-xs text-gray-400 leading-relaxed">For ML, scripts, automation, and anything that needs to actually crunch numbers.</p>
-        </div>
-
-        <!-- GitHub -->
-        <div class="blueprint-card rounded-xl p-5 group flex flex-col gap-3">
-          <div class="flex items-center gap-3">
-            <span class="w-9 h-9 flex-shrink-0 flex items-center justify-center rounded-lg bg-blueprint-500/20 text-blueprint-400 font-mono text-xs font-bold group-hover:bg-blueprint-500/30 transition-colors">GH</span>
-            <span class="font-semibold text-white text-sm">GitHub</span>
-          </div>
-          <p class="text-xs text-gray-400 leading-relaxed">Where the code lives. Push to main, site updates. That simple.</p>
-        </div>
-
-        <!-- Telegram -->
-        <div class="blueprint-card rounded-xl p-5 group flex flex-col gap-3">
-          <div class="flex items-center gap-3">
-            <span class="w-9 h-9 flex-shrink-0 flex items-center justify-center rounded-lg bg-blueprint-500/20 text-blueprint-400 font-mono text-xs font-bold group-hover:bg-blueprint-500/30 transition-colors">TG</span>
-            <span class="font-semibold text-white text-sm">Telegram</span>
-          </div>
-          <p class="text-xs text-gray-400 leading-relaxed">My command interface. I run the whole site through a Telegram bot.</p>
-        </div>
-
-        <!-- Cloudflare -->
-        <div class="blueprint-card rounded-xl p-5 group flex flex-col gap-3">
-          <div class="flex items-center gap-3">
-            <span class="w-9 h-9 flex-shrink-0 flex items-center justify-center rounded-lg bg-blueprint-500/20 text-blueprint-400 font-mono text-xs font-bold group-hover:bg-blueprint-500/30 transition-colors">CF</span>
-            <span class="font-semibold text-white text-sm">Cloudflare</span>
-          </div>
-          <p class="text-xs text-gray-400 leading-relaxed">DNS, caching, protection. The quiet thing keeping everything fast.</p>
-        </div>
-
+      <div class="flex flex-wrap gap-4">
+        <span class="tool-icon" data-tooltip="Claude">CL</span>
+        <span class="tool-icon" data-tooltip="Kirby CMS">KI</span>
+        <span class="tool-icon" data-tooltip="Tailwind CSS">TW</span>
+        <span class="tool-icon" data-tooltip="PHP">PHP</span>
+        <span class="tool-icon" data-tooltip="Python">PY</span>
+        <span class="tool-icon" data-tooltip="GitHub">GH</span>
+        <span class="tool-icon" data-tooltip="Telegram">TG</span>
+        <span class="tool-icon" data-tooltip="Cloudflare">CF</span>
+        <span class="tool-icon" data-tooltip="Claude Code">CC</span>
+        <span class="tool-icon" data-tooltip="Linux">LX</span>
       </div>
     </div>
   </section>

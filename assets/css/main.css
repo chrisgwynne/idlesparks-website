@@ -29,3 +29,9 @@ h1,h2,h3,h4,h5,h6{font-family:var(--font-heading);}
 .project-text ol li::before{content:counter(item,decimal-leading-zero) '.';position:absolute;left:0;color:#4a8fee;font-family:"JetBrains Mono",ui-monospace,monospace;font-size:.75rem;}
 .project-text code{font-family:"JetBrains Mono",ui-monospace,monospace;font-size:.8125rem;color:#a3cbfd;background:rgba(74,143,238,.1);padding:.15em .45em;border-radius:4px;border:1px solid rgba(74,143,238,.2);}
 .project-text img{border-radius:.75rem;width:100%;}
+
+/* Tool icon with tooltip */
+.tool-icon{position:relative;display:inline-flex;align-items:center;justify-content:center;width:3.25rem;height:3.25rem;border-radius:.75rem;background:rgba(74,143,238,.1);border:1px solid rgba(74,143,238,.2);color:#6ea8f7;font-family:"JetBrains Mono",ui-monospace,monospace;font-size:.7rem;font-weight:700;letter-spacing:.05em;cursor:default;transition:background .2s,border-color .2s,color .2s,transform .2s;}
+.tool-icon:hover{background:rgba(74,143,238,.2);border-color:rgba(74,143,238,.5);color:#fff;transform:translateY(-2px);}
+.tool-icon::after{content:attr(data-tooltip);position:absolute;bottom:calc(100% + 8px);left:50%;background:rgba(19,26,46,.97);border:1px solid rgba(74,143,238,.3);color:#e5e7eb;font-family:"JetBrains Mono",ui-monospace,monospace;font-size:.65rem;font-weight:500;letter-spacing:.08em;white-space:nowrap;padding:.3rem .65rem;border-radius:.375rem;opacity:0;pointer-events:none;transition:opacity .15s ease,transform .15s ease;transform:translateX(-50%) translateY(4px);}
+.tool-icon:hover::after{opacity:1;transform:translateX(-50%) translateY(0);}
