@@ -1,0 +1,53 @@
+Title: Project Horizon
+
+----
+
+Category: Brand Identity
+
+----
+
+Year: 2024
+
+----
+
+Description: Complete brand redesign for a fintech startup, encompassing visual identity, design system, and digital presence across all touchpoints.
+
+----
+
+Client: Horizon Finance
+
+----
+
+Role: Brand Strategy & Design
+
+----
+
+Tags: Branding, Design System, Figma, Motion
+
+----
+
+Url-link: 
+
+----
+
+Cover: 
+
+----
+
+Text:
+
+## The Challenge
+
+Horizon Finance was entering a crowded market and needed a brand identity that communicated trust, innovation, and accessibility. Their existing branding felt generic and failed to differentiate them from competitors.
+
+## Our Approach
+
+We immersed ourselves in the fintech landscape, studying what makes people trust financial brands. The blueprint included competitor analysis, mood boards, typography studies, and extensive color theory work — all before putting pen to paper.
+
+## The Result
+
+A distinctive brand system built on a foundation of geometric precision and warm, approachable colors. The identity works seamlessly across digital and print, from mobile app interfaces to conference booth displays.
+
+----
+
+Uuid: thnxoepitsu1jzpx

@@ -1,0 +1,3 @@
+Title: Idle Sparks
+----
+Description: An AI company building intelligent products that automate, reason, and ship.

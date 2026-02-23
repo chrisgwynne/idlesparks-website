@@ -1,0 +1,53 @@
+Title: Project Nexus
+
+----
+
+Category: E-Commerce
+
+----
+
+Year: 2024
+
+----
+
+Description: A high-performance e-commerce platform serving a premium fashion brand, handling thousands of daily transactions with sub-second page loads.
+
+----
+
+Client: Nexus Fashion
+
+----
+
+Role: Design & Development
+
+----
+
+Tags: Shopify, Custom Theme, Performance, A/B Testing
+
+----
+
+Url-link: 
+
+----
+
+Cover: 
+
+----
+
+Text:
+
+## The Challenge
+
+Nexus Fashion needed an online presence that matched their physical retail experience — premium, fast, and memorable. Their existing site was slow and conversion rates were declining.
+
+## Our Approach
+
+We conducted a thorough technical audit and redesigned the experience from the ground up. Performance was treated as a first-class design constraint, influencing every decision from image formats to JavaScript loading strategies.
+
+## The Result
+
+A 40% increase in conversion rate and a 60% improvement in page load times. The new site consistently scores above 95 on Lighthouse performance audits.
+
+----
+
+Uuid: 6ehbsx9q6zxhlyez

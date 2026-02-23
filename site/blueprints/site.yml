@@ -1,0 +1,57 @@
+title: Site
+
+columns:
+  - width: 1/2
+    sections:
+      pages:
+        type: pages
+        label: Pages
+        status: all
+        layout: list
+        create:
+          - home
+          - blog
+          - work
+          - contact
+          - default
+        templates:
+          - home
+          - blog
+          - work
+          - contact
+          - default
+      fields:
+        type: fields
+        fields:
+          description:
+            label: Site Description
+            type: textarea
+            size: small
+
+  - width: 1/4
+    sections:
+      articles:
+        type: pages
+        label: Blog Articles
+        parent: kirby.page("blog")
+        status: all
+        layout: list
+        create: article
+        templates:
+          - article
+        info: "{{ page.date.toDate('d M Y') }}"
+        empty: No articles yet
+
+  - width: 1/4
+    sections:
+      projects:
+        type: pages
+        label: Work Projects
+        parent: kirby.page("work")
+        status: all
+        layout: list
+        create: project
+        templates:
+          - project
+        info: "{{ page.category }} · {{ page.year }}"
+        empty: No projects yet

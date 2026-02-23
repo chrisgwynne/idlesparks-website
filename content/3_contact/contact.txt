@@ -1,0 +1,35 @@
+Title: Contact
+
+----
+
+Text: Have a problem that AI can solve? Let's talk. We're always looking for hard problems and ambitious teams.
+
+----
+
+Email: hello@idlesparks.com
+
+----
+
+Phone: 
+
+----
+
+Address: Remote-first company, worldwide.
+
+----
+
+Social:
+
+-
+  platform: GitHub
+  url: https://github.com
+-
+  platform: Twitter
+  url: https://twitter.com
+-
+  platform: LinkedIn
+  url: https://linkedin.com
+
+----
+
+Uuid: i58tsyc40ywyz2hz

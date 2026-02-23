@@ -1,0 +1,33 @@
+title: Work
+icon: grid
+
+columns:
+  - width: 2/3
+    sections:
+      fields:
+        type: fields
+        fields:
+          text:
+            label: Introduction
+            type: textarea
+            size: small
+
+  - width: 1/3
+    sections:
+      drafts:
+        type: pages
+        label: Drafts
+        status: draft
+        templates:
+          - project
+        create: project
+        empty: No draft projects
+        layout: list
+      published:
+        type: pages
+        label: Published Projects
+        status: listed
+        templates:
+          - project
+        layout: list
+        info: "{{ page.category }} · {{ page.year }}"

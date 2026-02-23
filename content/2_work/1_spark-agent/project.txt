@@ -1,0 +1,57 @@
+Title: Spark Agent
+
+----
+
+Category: AI Agent
+
+----
+
+Year: 2025
+
+----
+
+Description: An autonomous research agent that ingests complex briefs, searches across dozens of sources, synthesises findings, and delivers structured reports — no human in the loop.
+
+----
+
+Client: Internal Product
+
+----
+
+Role: Architecture & ML Engineering
+
+----
+
+Tags: LLMs, RAG, Python, FastAPI, Vector DB
+
+----
+
+Url-link: 
+
+----
+
+Cover: 
+
+----
+
+Text:
+
+## The Problem
+
+Research is one of the most time-consuming knowledge tasks. Analysts spend hours searching, reading, cross-referencing, and summarising — and the output quality varies wildly depending on who does the work and how much time they have.
+
+## How It Works
+
+Spark Agent takes a research brief in natural language, decomposes it into sub-questions, searches across configured sources (web, internal docs, APIs), extracts relevant information, and synthesises it into a structured report with citations. The entire process runs autonomously.
+
+## Under the Hood
+
+Built on a retrieval-augmented generation (RAG) architecture with dynamic query planning. The agent uses a chain-of-thought reasoning loop with tool access — it decides what to search, evaluates results, and iterates until confidence thresholds are met. All outputs include source attribution and confidence scores.
+
+## Results
+
+Spark Agent produces research reports in minutes that previously took analysts 4-8 hours. Internal benchmarks show 92% accuracy on factual claims, and the system processes over 500 research tasks per day across our client base.
+
+----
+
+Uuid: 0igljbxglezkr1tf

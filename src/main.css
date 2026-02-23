@@ -1,0 +1,168 @@
+@import "tailwindcss";
+
+/* ============================================
+   IDLE SPARKS — Architecture Blueprint Theme
+   (Lighter variant)
+   ============================================ */
+
+@theme {
+  /* Blueprint blue palette — slightly lifted / more saturated */
+  --color-blueprint-50: #f0f7ff;
+  --color-blueprint-100: #e0efff;
+  --color-blueprint-200: #c7e0ff;
+  --color-blueprint-300: #a3cbfd;
+  --color-blueprint-400: #6ea8f7;
+  --color-blueprint-500: #4a8fee;
+  --color-blueprint-600: #3575d4;
+  --color-blueprint-700: #2a5db5;
+  --color-blueprint-800: #264f94;
+  --color-blueprint-900: #264478;
+  --color-blueprint-950: #162647;
+
+  /* Lighter navy backgrounds — softer, more breathable */
+  --color-navy-900: #131a2e;
+  --color-navy-800: #1a2340;
+  --color-navy-700: #212d50;
+  --color-navy-600: #2a3860;
+  --color-navy-950: #0f1524;
+
+  /* Grid lines — more visible on the lighter base */
+  --color-grid-line: rgba(74, 143, 238, 0.12);
+  --color-grid-line-strong: rgba(74, 143, 238, 0.22);
+
+  /* Font families */
+  --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+
+  /* Custom spacing */
+  --spacing-18: 4.5rem;
+  --spacing-22: 5.5rem;
+}
+
+/* Blueprint grid background pattern */
+.blueprint-grid {
+  background-image:
+    linear-gradient(var(--color-grid-line) 1px, transparent 1px),
+    linear-gradient(90deg, var(--color-grid-line) 1px, transparent 1px),
+    linear-gradient(var(--color-grid-line-strong) 1px, transparent 1px),
+    linear-gradient(90deg, var(--color-grid-line-strong) 1px, transparent 1px);
+  background-size:
+    20px 20px,
+    20px 20px,
+    100px 100px,
+    100px 100px;
+}
+
+/* Subtle blueprint grid for lighter sections */
+.blueprint-grid-light {
+  background-image:
+    linear-gradient(rgba(74, 143, 238, 0.07) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(74, 143, 238, 0.07) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+/* Technical drawing crosshair decoration */
+.crosshair::before,
+.crosshair::after {
+  content: '';
+  position: absolute;
+  background: var(--color-blueprint-400);
+  opacity: 0.4;
+}
+.crosshair::before {
+  width: 1px;
+  height: 20px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.crosshair::after {
+  width: 20px;
+  height: 1px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Dashed border style for blueprint feel */
+.border-blueprint {
+  border: 1px dashed rgba(74, 143, 238, 0.35);
+}
+
+/* Dimension line annotation style */
+.dimension-line {
+  position: relative;
+}
+.dimension-line::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: repeating-linear-gradient(
+    90deg,
+    var(--color-blueprint-400) 0px,
+    var(--color-blueprint-400) 4px,
+    transparent 4px,
+    transparent 8px
+  );
+  opacity: 0.5;
+}
+
+/* Card hover effect */
+.blueprint-card {
+  transition: all 0.3s ease;
+  border: 1px solid rgba(74, 143, 238, 0.18);
+  background: rgba(255, 255, 255, 0.03);
+}
+.blueprint-card:hover {
+  border-color: rgba(74, 143, 238, 0.45);
+  background: rgba(74, 143, 238, 0.07);
+  box-shadow: 0 0 24px rgba(74, 143, 238, 0.12);
+}
+
+/* Technical label style */
+.tech-label {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--color-blueprint-400);
+  opacity: 0.85;
+}
+
+/* Blueprint section divider */
+.section-divider {
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    var(--color-blueprint-400) 20%,
+    var(--color-blueprint-400) 80%,
+    transparent 100%
+  );
+  opacity: 0.25;
+}
+
+/* Animated dash for blueprint lines */
+@keyframes dash-flow {
+  to { stroke-dashoffset: -20; }
+}
+
+/* Link style */
+a.blueprint-link {
+  color: var(--color-blueprint-400);
+  text-decoration: none;
+  border-bottom: 1px dashed rgba(74, 143, 238, 0.35);
+  transition: all 0.2s;
+}
+a.blueprint-link:hover {
+  color: var(--color-blueprint-300);
+  border-bottom-color: var(--color-blueprint-300);
+}
+
+/* Mobile nav toggle */
+.mobile-nav-open .mobile-nav {
+  display: flex;
+}

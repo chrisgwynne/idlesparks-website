@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:getkirby.com)",
+      "WebFetch(domain:tiny.com)",
+      "Bash(composer create-project:*)",
+      "Bash(where:*)",
+      "Bash(git clone:*)",
+      "Bash(npm init:*)",
+      "Bash(npm install:*)",
+      "Bash(npx tailwindcss --help:*)",
+      "Bash(npm run build:*)"
+    ]
+  }
+}

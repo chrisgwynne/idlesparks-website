@@ -1,0 +1,87 @@
+Title: Home
+
+----
+
+Badge: AI-Powered Company
+
+----
+
+Headline: 1 AI Agent.
+
+----
+
+Headline-accent: Infinite Output.
+
+----
+
+Subheadline: We build AI products that research, reason, and execute — autonomously and at scale. Every model tuned. Every pipeline production-grade.
+
+----
+
+Stats:
+
+-
+  value: 6
+  label: AI Products Shipped
+-
+  value: 10M+
+  label: Tasks Processed
+-
+  value: <1s
+  label: Avg Response Time
+-
+  value: 99.9%
+  label: Uptime
+
+----
+
+Services-headline: What We Build
+
+----
+
+Services-text: Intelligent systems designed to solve real problems. From autonomous agents to predictive models.
+
+----
+
+Services:
+
+-
+  title: AI Agents
+  description: Autonomous agents that research, plan, and execute multi-step tasks end-to-end without human intervention.
+  icon: M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4
+-
+  title: NLP APIs
+  description: Production-ready natural language processing — extraction, summarisation, classification, and generation at scale.
+  icon: M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z
+-
+  title: Computer Vision
+  description: Image and video analysis pipelines for quality control, object detection, OCR, and visual search.
+  icon: M15 12a3 3 0 11-6 0 3 3 0 016 0z M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z
+-
+  title: Data Pipelines
+  description: Robust ETL and streaming architectures that clean, transform, and route data in real time.
+  icon: M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4
+-
+  title: Predictive Models
+  description: Machine learning models for forecasting, anomaly detection, recommendation, and decision support.
+  icon: M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z
+-
+  title: AI Consulting
+  description: Strategic advisory for teams adopting AI. We help you identify high-impact use cases and build the right infrastructure.
+  icon: M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01
+
+----
+
+Featured-headline: Our Products
+
+----
+
+Cta-headline: Got a Problem AI Can Solve?
+
+----
+
+Cta-text: We build intelligent systems that ship fast and scale hard. Let's talk about what AI can do for your business.
+
+----
+
+Uuid: vvggaibo5kqmn7tn

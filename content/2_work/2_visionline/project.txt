@@ -1,0 +1,57 @@
+Title: VisionLine
+
+----
+
+Category: Computer Vision
+
+----
+
+Year: 2024
+
+----
+
+Description: A real-time computer vision system for manufacturing quality control, detecting defects on production lines at 200+ frames per second with 99.7% accuracy.
+
+----
+
+Client: Precision Manufacturing Co.
+
+----
+
+Role: ML Engineering & Deployment
+
+----
+
+Tags: PyTorch, ONNX, Edge Computing, CUDA
+
+----
+
+Url-link: 
+
+----
+
+Cover: 
+
+----
+
+Text:
+
+## The Problem
+
+Manual quality inspection on high-speed production lines is slow, inconsistent, and expensive. Human inspectors catch roughly 85% of defects and fatigue causes accuracy to drop further over long shifts. Our client needed a system that could inspect every single unit at full line speed.
+
+## How It Works
+
+VisionLine uses high-resolution cameras mounted at inspection points along the production line. Each frame is processed by a custom-trained object detection model that identifies defects, classifies their type and severity, and triggers automated sorting within milliseconds.
+
+## Under the Hood
+
+We trained a lightweight detection model on 50,000+ annotated defect images, then optimised it for edge deployment using ONNX and TensorRT. The system runs on NVIDIA Jetson modules mounted directly on the production line — no cloud latency, no network dependency.
+
+## Results
+
+Defect detection accuracy improved from 85% (human) to 99.7% (VisionLine). False positive rate sits below 0.1%. The system processes over 2 million units per month and paid for itself within 3 months through reduced waste and returns.
+
+----
+
+Uuid: mbc2ewh73v1dufdn

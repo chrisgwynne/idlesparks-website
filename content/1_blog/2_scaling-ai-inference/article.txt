@@ -1,0 +1,41 @@
+Title: Scaling AI Inference Without Burning Cash
+
+----
+
+Date: 2025-02-01
+
+----
+
+Tags: Infrastructure, Engineering
+
+----
+
+Intro: GPU costs can kill an AI startup faster than bad product-market fit. Here's how we keep inference fast and costs sane across six production products.
+
+----
+
+Text:
+
+## The Cost Problem
+
+When you're processing millions of tasks per month, every millisecond of GPU time adds up. Naive scaling — just throw more GPUs at it — works until the invoice arrives. We needed a smarter approach from day one.
+
+## Batching and Queuing
+
+The single biggest win was intelligent request batching. Instead of processing inference calls one-by-one, we group compatible requests and run them as batches. Combined with priority queuing, this alone cut our GPU costs by 40%.
+
+## Model Selection at Runtime
+
+Not every request needs the biggest model. We built a routing layer that analyses incoming tasks and dispatches them to the most efficient model that can handle the job. Simple classification? Use a small, fast model. Complex reasoning? Route to the heavy hitter.
+
+## Caching and Precomputation
+
+We cache embedding vectors, pre-compute common queries, and store intermediate results. For our document AI product, this means repeat queries on the same corpus are nearly free — we serve them from cache instead of re-running inference.
+
+## The Result
+
+Our average cost per inference call dropped 65% over twelve months while throughput tripled. The key insight: optimise the system, not just the model.
+
+----
+
+Uuid: xyw6kzezrz8ujdhr

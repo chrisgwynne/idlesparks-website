@@ -1,0 +1,94 @@
+title: Homepage
+icon: home
+
+tabs:
+  hero:
+    label: Hero Section
+    columns:
+      main:
+        width: 1/1
+        sections:
+          herofields:
+            type: fields
+            fields:
+              badge:
+                label: Badge Text
+                type: text
+                help: The pill badge above the headline (e.g. "AI-Powered Company")
+              headline:
+                label: Headline
+                type: text
+              headline_accent:
+                label: Headline Accent
+                type: text
+                help: The blue-colored part of the headline
+              subheadline:
+                label: Subheadline
+                type: textarea
+                size: small
+              stats:
+                label: Stats
+                type: structure
+                fields:
+                  value:
+                    label: Value
+                    type: text
+                    width: 1/2
+                  label:
+                    label: Label
+                    type: text
+                    width: 1/2
+
+  services:
+    label: Services
+    columns:
+      main:
+        width: 1/1
+        sections:
+          servicefields:
+            type: fields
+            fields:
+              services_headline:
+                label: Section Headline
+                type: text
+              services_text:
+                label: Section Description
+                type: textarea
+                size: small
+              services:
+                label: Services
+                type: structure
+                fields:
+                  title:
+                    label: Title
+                    type: text
+                    width: 1/2
+                  icon:
+                    label: SVG Path
+                    type: text
+                    width: 1/2
+                    help: SVG path data for the icon
+                  description:
+                    label: Description
+                    type: textarea
+                    size: small
+
+  featured:
+    label: Featured & CTA
+    columns:
+      main:
+        width: 1/1
+        sections:
+          ctafields:
+            type: fields
+            fields:
+              featured_headline:
+                label: Featured Work Headline
+                type: text
+              cta_headline:
+                label: CTA Headline
+                type: text
+              cta_text:
+                label: CTA Text
+                type: textarea
+                size: small

@@ -1,0 +1,70 @@
+title: Project
+icon: image
+
+status:
+  draft:
+    label: Draft
+    text: The project is still in draft
+  unlisted:
+    label: Unlisted
+    text: The project is published but unlisted
+  listed:
+    label: Published
+    text: The project is publicly visible
+
+columns:
+  main:
+    width: 2/3
+    sections:
+      content:
+        type: fields
+        fields:
+          description:
+            label: Short Description
+            type: textarea
+            size: small
+          text:
+            label: Content
+            type: textarea
+            size: huge
+            buttons:
+              - bold
+              - italic
+              - link
+              - code
+              - "|"
+              - headings
+              - ul
+              - ol
+
+  sidebar:
+    width: 1/3
+    sections:
+      meta:
+        type: fields
+        fields:
+          category:
+            label: Category
+            type: text
+          year:
+            label: Year
+            type: text
+          client:
+            label: Client
+            type: text
+          role:
+            label: Role
+            type: text
+          tags:
+            label: Tags
+            type: tags
+          url_link:
+            label: External URL
+            type: url
+          cover:
+            label: Cover Image
+            type: files
+            max: 1
+      files:
+        type: files
+        label: Files
