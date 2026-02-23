@@ -100,7 +100,11 @@
     <div class="absolute inset-0 blueprint-grid-light"></div>
     <div class="relative max-w-7xl mx-auto px-6 lg:px-8">
 
-      <p class="text-center text-sm text-gray-400 font-mono mb-10 tracking-widest uppercase">Tools we tinker with:</p>
+      <div class="mb-12">
+        <span class="tech-label">// Tools I Tinker With</span>
+        <h2 class="mt-4 text-3xl md:text-5xl font-bold text-white">The stack that makes it possible.</h2>
+        <p class="mt-4 text-gray-300 text-lg max-w-2xl">Not a sponsor list. Just the things I actually reach for every day.</p>
+      </div>
 
       <div class="tools-grid">
 

@@ -63,8 +63,8 @@
   <!-- Project Cover Image -->
   <?php if ($cover = $page->cover()->toFile()): ?>
   <section class="max-w-6xl mx-auto px-6 lg:px-8 pb-12">
-    <div class="rounded-xl overflow-hidden border border-blueprint-600/40">
-      <img src="<?= $cover->url() ?>" alt="<?= $page->title() ?>" class="w-full">
+    <div class="rounded-xl overflow-hidden border border-blueprint-600/40 aspect-[16/9]">
+      <img src="<?= $cover->url() ?>" alt="<?= $page->title() ?>" class="w-full h-full object-cover object-top">
     </div>
   </section>
   <?php endif ?>
@@ -85,8 +85,8 @@
         <span class="tech-label">// Gallery</span>
         <div class="mt-4 grid grid-cols-1 md:grid-cols-2 gap-4">
           <?php foreach ($gallery as $image): ?>
-          <div class="rounded-xl overflow-hidden border border-blueprint-600/40">
-            <img src="<?= $image->url() ?>" alt="<?= $image->alt() ?>" class="w-full">
+          <div class="rounded-xl overflow-hidden border border-blueprint-600/40 aspect-[16/10]">
+            <img src="<?= $image->url() ?>" alt="<?= $image->alt() ?>" class="w-full h-full object-cover object-top">
           </div>
           <?php endforeach ?>
         </div>
