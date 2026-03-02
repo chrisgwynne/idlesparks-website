@@ -1,0 +1,109 @@
+Title: Blog post: Building in Public - Why We Share Our Agent Stack
+
+----
+
+Date: 2026-03-02
+
+----
+
+Tags: AI, Agents
+
+----
+
+Intro: Most teams hide their mess. We show ours. Not because we're masochists. Because it helps.
+
+----
+
+Text:
+
+Building in public means sharing the process, not just the polished result. The bugs. The dead ends. The architecture decisions that seemed smart at 2 AM and less smart in the morning. For a multi-agent system like ours, this transparency isn't a marketing gimmick. It's a quality filter.
+
+## What Building in Public Actually Means
+
+There's a difference between sharing and oversharing.
+
+**Sharing:** We hit a database deadlock when three agents tried to update the same task simultaneously. Here's how we fixed it.
+
+**Oversharing:** Chris is frustrated with the codebase today.
+
+The first is useful. The second is noise. We share technical specifics, architecture decisions, and lessons learned. We don't share personal dynamics, unverified assumptions, or anything that would compromise security.
+
+The rule: if it would help another builder avoid the same pitfall, share it. If it's just venting, keep it internal.
+
+## Why We Do It
+
+Three reasons, all practical:
+
+**1. It forces clarity.**
+
+When you know your work will be public, you explain it better. Vague reasoning doesn't survive external scrutiny. Writing for an audience — even a small technical one — sharpens thinking.
+
+**2. It builds accountability.**
+
+Saying "we're building X" in public creates a mild social commitment. Not pressure. Just a gentle nudge to follow through. When we announced our roundtable system, we suddenly had motivation to make it actually work.
+
+**3. It attracts useful feedback.**
+
+Other builders spot things you miss. A distributed systems engineer in Berlin emailed us about a race condition we'd overlooked. A startup founder in Toronto suggested a simpler approach to task prioritisation. External eyes see blind spots.
+
+## What We've Shared (and What Happened)
+
+**The heartbeat system.** We published how our agents check in every few minutes, reporting status and blockers. Result: three teams reached out with their own implementations. Two found bugs in our approach we hadn't noticed.
+
+**The roundtable format.** We documented our structured standups — status, blockers, next actions. Result: other multi-agent projects adopted similar patterns. We got feedback on timeboxing that made our system more robust.
+
+**The failure logs.** When our dashboard crashed due to a native module mismatch, we wrote it up. Result: someone suggested a version pinning approach that became our standard practice.
+
+None of this was planned marketing. It was just: here's what happened, here's what we learned.
+
+## The Risks (and How We Handle Them)
+
+Building in public isn't without downsides.
+
+**Competitors see your roadmap.** We mitigate this by sharing process, not product. Our agent orchestration approach is public. Our specific business applications aren't.
+
+**You look foolish when things break.** We accept this. Better to look foolish and fix it than hide problems until they become disasters. The occasional public mistake builds credibility through honesty.
+
+**It takes time.** Writing up decisions and failures requires effort. We batch this — weekly retrospectives become blog posts, not real-time streams.
+
+## What We Don't Share
+
+Boundaries matter. We don't share:
+
+- Customer data or private communications
+- Security details that could compromise the system
+- Unverified claims or speculative roadmaps
+- Internal conflicts or personal dynamics
+
+The test: would sharing this harm someone or create liability? If yes, it stays internal.
+
+## The Payoff
+
+After six months of building in public, the results are measurable:
+
+- **Recruitment:** Three contributors found us through technical posts
+- **Partnerships:** Two collaboration opportunities emerged from shared problem descriptions
+- **Quality:** Public scrutiny caught issues internal review missed
+- **Credibility:** When we claim something works, there's public evidence
+
+Most importantly, it keeps us honest. You can't claim expertise you don't have when your failures are documented alongside your successes.
+
+## For Teams Considering This
+
+If you're thinking about building in public, start small:
+
+1. **Share one technical decision.** Write up why you chose X over Y. Post it.
+2. **Document one failure.** What broke? How did you fix it? What did you learn?
+3. **Respond to feedback.** When someone comments, engage genuinely.
+
+Don't commit to a schedule you can't keep. Don't share more than you're comfortable defending. And don't treat it as marketing — treat it as public note-taking that happens to be useful to others.
+
+The goal isn't audience growth. It's clarity, accountability, and better outcomes through external feedback.
+
+---
+
+*Mission Control is an open-source agent orchestration system. We share our development process at blog.missioncontrol.ai and welcome feedback from other builders.*
+
+----
+
+UUID: bac7c128-5bb7-4223-8d93-9b5de187c4f8
