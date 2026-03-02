@@ -1,0 +1,93 @@
+Title: Blog post: How We Taught Our AI Agents to Run Standups
+
+----
+
+Date: 2026-03-02
+
+----
+
+Tags: AI, Agents
+
+----
+
+Intro: Every team needs a rhythm. Humans have standups. AI agents need something similar — but the format has to work for machines that don't drink coffee or complain about commutes.
+
+----
+
+Text:
+
+We built roundtables into Mission Control, our agent orchestration system. They're structured conversations that happen on a schedule. Each agent reports status, flags blockers, and states next actions. Simple in concept. Powerful in practice.
+
+## Why Rituals Matter for Distributed Systems
+
+Coordination falls apart without regular touchpoints. This is true for human teams. It's equally true for multi-agent systems.
+
+When agents work in isolation, several problems emerge:
+
+- **Duplicate effort.** Two agents tackle the same problem unaware of each other.
+- **Stale priorities.** An agent keeps working on task A while the system needs task B.
+- **Silent failures.** A blocker goes unreported because no one asked.
+
+Regular standups solve this. They create a heartbeat of accountability. Everyone knows what everyone else is doing. Blockers surface quickly. The system self-corrects.
+
+## The Roundtable Format
+
+Our roundtables follow a strict pattern. This isn't bureaucracy. It's clarity.
+
+Each agent speaks once, in a fixed order. The format is always the same:
+
+1. **Status.** What did you complete since the last roundtable?
+2. **Blockers.** What's stopping you from making progress?
+3. **Next actions.** What will you do next?
+
+No rambling. No status theatre. Just signal, no noise.
+
+Here's what a typical exchange looks like:
+
+> **Minion:** Completed task routing refactor. No blockers. Next: assign new tasks to available agents.
+>
+> **Quill:** Drafted two blog posts. Blocker: waiting on review from Minion. Next: revise based on feedback.
+>
+> **Gru:** Fixed API latency issue. No blockers. Next: deploy monitoring dashboard.
+
+Three sentences each. Enough context to coordinate. Not enough to waste time.
+
+## How We Built It
+
+The roundtable system has three components:
+
+**Scheduler.** A cron job triggers roundtables at fixed intervals — every few hours during active periods, less frequently overnight.
+
+**Moderator.** The Minion agent runs each session. Minion sets the agenda, keeps time, and ensures every agent gets a turn.
+
+**Transcript store.** Every roundtable is logged. We can review what was said, track decisions, and spot patterns in how agents communicate.
+
+The technical implementation is straightforward. A conversation record gets created with a topic and participant list. Each agent's response gets appended to the transcript. When everyone has spoken, the roundtable closes.
+
+## What We Learned
+
+Running standups with AI agents taught us several lessons:
+
+**Structure beats flexibility.** We tried open-ended discussions. Agents wandered. We moved to a rigid format. Coordination improved immediately.
+
+**Timeboxing matters.** Roundtables have a maximum duration. If an agent doesn't respond within the window, the session continues without them. This prevents the entire system from stalling on one slow participant.
+
+**Logs are essential.** The transcript isn't optional documentation. It's the audit trail. When something goes wrong, we can trace the decision path through roundtable records.
+
+**Not every agent needs to attend every meeting.** We started with all-hands standups. Now we run focused sessions — just the agents working on related goals. Smaller groups move faster.
+
+## The Payoff
+
+Since implementing roundtables, our system stability improved noticeably. Blockers get reported within hours instead of days. Tasks don't sit forgotten. Agents coordinate without constant human oversight.
+
+The roundtable isn't a meeting for the sake of having a meeting. It's a coordination mechanism. It keeps distributed agents aligned. It surfaces problems early. It creates accountability without micromanagement.
+
+If you're running multiple AI agents, consider adding a standup ritual. The format doesn't matter much. What matters is regular, structured communication. Your agents — and your sanity — will thank you.
+
+---
+
+*Mission Control is our open-source agent orchestration dashboard. It handles task assignment, heartbeat monitoring, and roundtable coordination for multi-agent systems.*
+
+----
+
+UUID: 23820cf5-0e17-4cb0-a5d5-d726b0d06d77
