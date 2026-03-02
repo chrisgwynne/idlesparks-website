@@ -1,0 +1,130 @@
+Title: Blog post: From Zero to Five Agents - Our Multi-Agent Journey
+
+----
+
+Date: 2026-03-02
+
+----
+
+Tags: AI, Agents
+
+----
+
+Intro: We started with one. Now we have five. The path from single agent to specialist team wasn't obvious — and we made plenty of mistakes along the way.
+
+----
+
+Text:
+
+This is the story of how our multi-agent system evolved. More importantly, it's a guide for anyone wondering when to split their AI assistant into multiple specialists, and how to keep them from stepping on each other's toes.
+
+## The Beginning: One Agent to Rule Them All
+
+Our first agent was a generalist. It answered questions, drafted emails, researched topics, and wrote code. Sound familiar? This is where most people start — and where many stay stuck.
+
+The single-agent approach works until it doesn't. We hit the wall when three things happened simultaneously:
+
+1. **Context overflow.** The agent's prompt grew to 4,000 tokens just to describe its capabilities. Every request carried the weight of every possible task.
+
+2. **Conflicting priorities.** The same agent was supposed to write marketing copy and debug API errors. The mental model switching slowed everything down.
+
+3. **No parallel execution.** One agent can only do one thing at a time. Our throughput hit a ceiling.
+
+The solution seemed obvious: split the work. But split it how?
+
+## Splitting Strategy: Horizontal vs Vertical
+
+We considered two approaches.
+
+**Horizontal splitting** means multiple identical agents handling different requests in parallel. Like having five customer service reps with the same training. This improves throughput but not capability.
+
+**Vertical splitting** means specialist agents with different skills. One writes, one researches, one codes. This improves capability but requires coordination.
+
+We chose vertical splitting. Our reasoning: the bottleneck wasn't request volume — it was task complexity. Different tasks needed different expertise.
+
+## The First Split: Researcher vs Writer
+
+Our first specialist was **Sage**, the research agent. We pulled all fact-finding, verification, and competitive analysis out of the generalist and gave it to Sage.
+
+The results were immediate:
+
+- Research tasks no longer interrupted creative work
+- Sage could run longer searches without blocking other operations
+- Claims got verified by an agent whose entire purpose was accuracy
+
+The second specialist was **Quill**, the writer. Blog posts, emails, social captions — all copywriting moved to a dedicated agent with its own voice guidelines and quality standards.
+
+With these two specialists, we had a pipeline: Sage researches, Quill writes. Simple and effective.
+
+## Adding Coordination: The Orchestrator
+
+Two agents created a new problem: who decides what happens next?
+
+We added **Minion**, the orchestrator agent. Minion doesn't do the work — it assigns it. Minion reads incoming requests, determines which specialist should handle them, and tracks progress.
+
+This three-agent system (Minion, Sage, Quill) handled most of our work for a month. But we kept finding gaps.
+
+## The Fourth Agent: Engineering
+
+Technical tasks kept breaking the flow. When we needed code written or systems debugged, the generalist struggled. So we created **Gru**, the engineering agent.
+
+Gru owns all technical implementation: code, infrastructure, debugging. Gru doesn't write marketing copy. Gru doesn't research competitors. Gru builds.
+
+The four-agent system felt complete. Until it wasn't.
+
+## The Fifth Agent: Operations
+
+We noticed a pattern: someone needed to watch the system itself. Not just execute tasks, but monitor whether the system was healthy, identify bottlenecks, and suggest improvements.
+
+Enter **Observer**, the operations agent. Observer doesn't have a task queue in the traditional sense. Observer watches logs, tracks metrics, and surfaces insights about system performance.
+
+With five agents, we had a complete team:
+
+| Agent | Role | Core Task |
+|-------|------|-----------|
+| Minion | Orchestrator | Assign work, track progress |
+| Sage | Researcher | Verify facts, analyze markets |
+| Quill | Writer | Draft copy, maintain voice |
+| Gru | Engineer | Build systems, fix bugs |
+| Observer | Operations | Monitor health, suggest improvements |
+
+## Lessons from the Split
+
+**Start with pain, not theory.** We didn't create five agents because the architecture looked elegant. We created them because single-agent limitations hurt our throughput.
+
+**Specialisation beats generalisation.** Our agents are narrower than most AI assistants — and more effective because of it. A specialist with 500 tokens of focused context beats a generalist with 4,000 tokens of mixed context.
+
+**Coordination is the hard part.** The technical implementation of multiple agents is straightforward. The challenge is designing handoffs: how does Sage signal that research is complete? How does Minion know when to escalate? We solved this with structured status updates and a shared task board.
+
+**Not every task needs a specialist.** We still have a general-purpose path for one-off requests that don't fit specialist domains. The specialists handle the recurring, high-volume work.
+
+## When to Split Your Own System
+
+Consider vertical splitting when:
+
+- Your agent's prompt exceeds 2,000 tokens of capability description
+- Different task types require fundamentally different approaches
+- You find yourself adding "if this task involves X, do Y" logic repeatedly
+- Throughput matters as much as quality
+
+Don't split when:
+
+- Task volume is low (under 50 requests per day)
+- Most requests are similar in nature
+- Coordination overhead would exceed the benefit
+
+## The Payoff
+
+Our five-agent system processes roughly 3x the workload of our original single agent. More importantly, quality improved in every specialist domain. Sage's research is deeper than our generalist ever managed. Quill's copy is more consistent. Gru's code is more reliable.
+
+The cost is complexity. Five agents means five failure modes, five update cycles, five contexts to maintain. For us, the tradeoff is worth it. For smaller operations, it might not be.
+
+If you're hitting the limits of a single agent, consider vertical splitting. Start with one specialist. Add coordination. Grow deliberately. The goal isn't more agents — it's better outcomes.
+
+---
+
+*Mission Control is our open-source agent orchestration system. It handles task assignment, heartbeat monitoring, and roundtable coordination for multi-agent systems.*
+
+----
+
+UUID: 7d27bcd4-cd34-40bc-b8f3-c3dc30e4d6af
