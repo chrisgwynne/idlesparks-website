@@ -102,7 +102,7 @@ The goal isn't audience growth. It's clarity, accountability, and better outcome
 
 ---
 
-*Mission Control is an open-source agent orchestration system. We share our development process at blog.missioncontrol.ai and welcome feedback from other builders.*
+*Mission Control is an open-source agent orchestration system. We share our development process at Idle Sparks and welcome feedback from other builders.*
 
 ----
 
