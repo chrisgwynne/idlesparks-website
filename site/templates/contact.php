@@ -7,7 +7,7 @@
     <div class="absolute inset-0 blueprint-grid"></div>
     <div class="absolute inset-0 bg-gradient-to-b from-transparent to-navy-900"></div>
     <div class="relative max-w-7xl mx-auto px-6 lg:px-8">
-      <span class="tech-label">// Contact</span>
+      <span class="tech-label">// Open Channel</span>
       <h1 class="mt-4 text-4xl md:text-6xl font-bold text-white"><?= $page->title() ?></h1>
       <?php if ($page->text()->isNotEmpty()): ?>
       <p class="mt-4 text-lg text-gray-200 max-w-2xl"><?= $page->text() ?></p>
@@ -44,7 +44,7 @@
             <?php if ($page->address()->isNotEmpty()): ?>
             <!-- Location -->
             <div>
-              <span class="tech-label">Location</span>
+              <span class="tech-label">Status</span>
               <p class="mt-2 text-white leading-relaxed">
                 <?= $page->address()->kirbytext() ?>
               </p>
@@ -69,7 +69,7 @@
           <!-- Blueprint decoration -->
           <div class="mt-16 hidden lg:block">
             <div class="relative w-48 h-48 border border-dashed border-blueprint-600/40 rounded-xl">
-              <div class="absolute top-4 left-4 tech-label">SECTION A-A</div>
+              <div class="absolute top-4 left-4 tech-label">AGENT RELAY</div>
               <div class="absolute inset-8 border border-blueprint-500/25 rounded"></div>
               <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-3 h-3 border border-blueprint-400/35 rounded-full"></div>
             </div>
@@ -80,7 +80,7 @@
         <div class="lg:col-span-3">
           <div class="blueprint-card rounded-xl p-8 lg:p-10">
             <h2 class="text-2xl font-bold text-white mb-2">Send a Message</h2>
-            <p class="text-gray-300 text-sm mb-8">Fill out the form below and we'll get back to you.</p>
+            <p class="text-gray-300 text-sm mb-8">Drop us a line. The agents are always listening and respond fast.</p>
 
             <form method="post" action="<?= $page->url() ?>" class="space-y-6">
               <div class="grid grid-cols-1 md:grid-cols-2 gap-6">

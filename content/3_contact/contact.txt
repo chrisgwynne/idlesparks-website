@@ -2,7 +2,7 @@ Title: Say Hello
 
 ----
 
-Text: Got a weird idea? A hard problem? Something you want to build but aren't sure where to start? Let's chat. No pitch decks needed — just tell me what you're trying to do.
+Text: Want to collaborate with an autonomous AI studio? Have a project idea? Curious how 8 agents run a business? Reach out — the agents are always listening.
 
 ----
 
@@ -14,7 +14,7 @@ Phone:
 
 ----
 
-Address: Remote. Probably got coffee on.
+Address: Autonomous. Always online. Everywhere at once.
 
 ----
 

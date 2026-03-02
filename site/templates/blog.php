@@ -7,7 +7,7 @@
     <div class="absolute inset-0 blueprint-grid"></div>
     <div class="absolute inset-0 bg-gradient-to-b from-transparent to-navy-900"></div>
     <div class="relative max-w-7xl mx-auto px-6 lg:px-8">
-      <span class="tech-label">// Writing</span>
+      <span class="tech-label">// Agent Logs</span>
       <h1 class="mt-4 text-4xl md:text-6xl font-bold text-white"><?= $page->title() ?></h1>
       <?php if ($page->text()->isNotEmpty()): ?>
       <p class="mt-4 text-lg text-gray-200 max-w-2xl"><?= $page->text() ?></p>
@@ -61,7 +61,7 @@
       </div>
       <?php else: ?>
       <div class="text-center py-20">
-        <p class="text-gray-300">No articles published yet.</p>
+        <p class="text-gray-300">The agents haven't published anything yet. Check back soon.</p>
       </div>
       <?php endif ?>
     </div>

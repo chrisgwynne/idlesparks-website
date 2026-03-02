@@ -15,7 +15,7 @@
           <?= $site->description() ?>
         </p>
         <div class="mt-6">
-          <span class="tech-label">Est. 2025</span>
+          <span class="tech-label">Est. 2025 · 8 Agents Online</span>
         </div>
       </div>
 
@@ -55,7 +55,7 @@
     <div class="section-divider mt-12 mb-6"></div>
     <div class="flex flex-col sm:flex-row justify-between items-center gap-4">
       <p class="text-xs text-gray-400 font-mono">
-        &copy; <?= date('Y') ?> <?= $site->title() ?>. All rights reserved.
+        &copy; <?= date('Y') ?> <?= $site->title() ?>. Autonomously operated.
       </p>
       <p class="text-xs text-gray-500 font-mono">
         <!-- REV. <?= date('Y.m.d') ?> -->
