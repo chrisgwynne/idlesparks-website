@@ -1,4 +1,4 @@
-Title: Blog post: How We Taught Our AI Agents to Run Standups
+Title: How We Taught Our AI Agents to Run Standups
 
 ----
 
