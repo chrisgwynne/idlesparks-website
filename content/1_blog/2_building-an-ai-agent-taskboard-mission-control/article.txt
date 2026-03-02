@@ -1,0 +1,109 @@
+Title: Building an AI Agent Taskboard: Mission Control
+
+----
+
+Date: 2026-03-02
+
+----
+
+Tags: AI, Agents
+
+----
+
+Intro: ## Introduction
+
+----
+
+Text:
+
+Managing multiple AI agents is like conducting an orchestra. Each agent has a role, a rhythm, and a responsibility. Without a central conductor, you get noise. With one, you get music. Mission Control is our conductor — a taskboard and orchestration system that keeps AI agents aligned, accountable, and productive.
+
+In this post, I'll walk through why we built it, how it works, and what we've learned about multi-agent systems along the way.
+
+## The Problem: Agents Without Coordination
+
+We started with a simple setup: one agent, one job. But as operations grew, we needed specialists. A copywriter for content. A developer for code. An observer for monitoring. A manager for coordination. Suddenly we had five agents, five contexts, and zero visibility into who was doing what.
+
+The problems multiplied quickly:
+- **Work duplication** — two agents picking up the same task
+- **Silent failures** — agents stuck with no escalation
+- **No audit trail** — no way to see what happened yesterday
+- **Context loss** — every session started from zero
+
+We needed a system. Not just a to-do list, but a living operational backbone.
+
+## The Architecture: Goals, Tasks, and Agents
+
+Mission Control is built around three core concepts:
+
+### Goals
+Goals are the "why." They represent business objectives like "Launch the blog" or "Improve dashboard stability." Every task rolls up to a goal, so agents always know the bigger picture.
+
+### Tasks
+Tasks are the "what." They have status (todo → in_progress → review → done), priority, assignments, and deadlines. Tasks can be blocked, stuck, or flagged for escalation.
+
+### Agents
+Agents are the "who." Each agent has a role, a status (idle, working, blocked), and a heartbeat timestamp. If an agent goes silent, the system knows.
+
+## The Heartbeat System
+
+The magic happens in the heartbeat. Every few minutes, each agent checks in:
+
+1. **Sync status** — tell the system you're alive
+2. **Scan tasks** — check what's assigned to you
+3. **Check mentions** — see if anyone needs you
+4. **Detect blockers** — flag stuck tasks for escalation
+
+This isn't polling for polling's sake. The heartbeat creates accountability. If an agent misses check-ins, the system flags it. If a task sits untouched for hours, it surfaces. Nothing falls through cracks.
+
+## Proposals and Roundtables
+
+Not all work starts with a task. Sometimes agents spot opportunities. Proposals let any agent suggest new work, which gets reviewed and approved before becoming a real task.
+
+Roundtables are structured conversations — standups, debates, brainstorms. They have required outputs: action items, task proposals, insights worth keeping. Good ideas become system artifacts, not chat history.
+
+## The Agent Roles
+
+Our current lineup:
+
+- **Jarvis** — Personal assistant for Chris. Handles calendar, email, personal domain.
+- **Minion** — Orchestrator. Routes work, manages priorities, runs roundtables.
+- **Quill** — Copywriter. Product listings, blog posts, marketing copy.
+- **Gru** — Developer. Builds features, fixes bugs, maintains infrastructure.
+- **Observer** — Quality assurance. Monitors systems, audits compliance, surfaces issues.
+
+Each agent has a clear lane. Minion assigns work. Agents execute. Observer verifies. Jarvis handles the personal layer above it all.
+
+## Lessons Learned
+
+**1. Clear ownership beats smart agents.** An average agent with a clear brief outperforms a brilliant agent with ambiguity. The system enforces clarity.
+
+**2. Visibility prevents drift.** When everyone can see the board, alignment happens naturally. Secrets and silos create divergence.
+
+**3. Rituals matter.** The heartbeat, the standup, the proposal review — these aren't bureaucracy. They're synchronization points that keep distributed agents coherent.
+
+**4. Escalation is a feature.** Blockers shouldn't be shameful. The system should surface them early and route them to humans who can help.
+
+## What's Next
+
+Mission Control is still evolving. We're adding:
+- Memory persistence across sessions
+- Automated proposal generation from roundtables
+- Integration with external tools (GitHub, Discord, email)
+- Performance metrics per agent and per goal
+
+The goal is simple: make multi-agent systems as easy to manage as a single agent, but with the output of a team.
+
+## Conclusion
+
+Building an AI agent taskboard isn't just about tracking work. It's about creating a shared reality. When every agent sees the same board, shares the same goals, and follows the same rhythms, you get coordination without micromanagement.
+
+Mission Control is our attempt at that. If you're building with multiple agents, you might need something similar. Start with visibility. Add accountability. Build rituals. The rest follows.
+
+---
+
+*Want to see Mission Control in action? We're documenting the build publicly. Follow along for updates on agent orchestration, multi-agent systems, and task automation.*
+
+----
+
+UUID: ed70abfa-3e0f-4615-897b-6d5d8248d875
