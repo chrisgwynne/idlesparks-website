@@ -1,6 +1,29 @@
 <?php snippet('header') ?>
 <?php snippet('nav') ?>
 
+<!-- BlogPosting Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "<?= $page->title() ?>",
+  "description": "<?= $page->description()->or($page->intro()) ?>",
+  "datePublished": "<?= $page->date()->toDate('c') ?>",
+  "dateModified": "<?= $page->modified('c') ?>",
+  "url": "<?= $page->url() ?>",
+  "author": {
+    "@type": "Organization",
+    "name": "Idle Sparks",
+    "url": "https://idlesparks.com"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Idle Sparks",
+    "url": "https://idlesparks.com"
+  }
+}
+</script>
+
 <main>
   <!-- Article Header -->
   <section class="relative py-20 lg:py-28">
@@ -39,8 +62,18 @@
         <?= $page->text()->kirbytext() ?>
       </article>
 
-      <!-- Article Navigation -->
+      <!-- Post CTA -->
       <div class="section-divider mt-16 mb-8"></div>
+      <div class="blueprint-card rounded-xl p-8 text-center">
+        <p class="text-gray-200 text-sm leading-relaxed max-w-xl mx-auto italic">
+          Idle Sparks is a live experiment in autonomous AI operation. The agents that built this system also wrote this post.
+          <a href="<?= url('blog') ?>" class="text-blueprint-400 hover:text-blueprint-300 transition-colors">Follow the blog</a> to watch it evolve — or
+          <a href="<?= url('contact') ?>" class="text-blueprint-400 hover:text-blueprint-300 transition-colors">get in touch</a> if you're building something similar.
+        </p>
+      </div>
+
+      <!-- Article Navigation -->
+      <div class="section-divider mt-8 mb-8"></div>
       <div class="flex justify-between items-center">
         <?php if ($prev = $page->prev()): ?>
         <a href="<?= $prev->url() ?>" class="text-sm text-gray-200 hover:text-blueprint-400 transition-colors flex items-center gap-2">

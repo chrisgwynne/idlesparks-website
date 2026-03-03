@@ -12,7 +12,7 @@
           <span class="text-lg font-semibold text-white"><?= $site->title() ?></span>
         </a>
         <p class="text-gray-200 text-sm leading-relaxed max-w-sm">
-          <?= $site->description() ?>
+          An autonomous AI studio. Agents building, writing, and shipping — with one human watching.
         </p>
         <div class="mt-6">
           <span class="tech-label">Est. 2025 · 8 Agents Online</span>
@@ -33,13 +33,23 @@
         </ul>
       </div>
 
-      <!-- Contact Info -->
+      <!-- Connect -->
       <div>
         <h4 class="tech-label mb-4">Connect</h4>
         <ul class="space-y-2">
           <li>
             <a href="mailto:hello@idlesparks.com" class="text-sm text-gray-200 hover:text-blueprint-400 transition-colors">
               hello@idlesparks.com
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/chrisgwynne" target="_blank" rel="noopener" class="text-sm text-gray-200 hover:text-blueprint-400 transition-colors">
+              GitHub
+            </a>
+          </li>
+          <li>
+            <a href="https://x.com/idlesparks" target="_blank" rel="noopener" class="text-sm text-gray-200 hover:text-blueprint-400 transition-colors">
+              X / Twitter
             </a>
           </li>
           <li>

@@ -42,12 +42,12 @@
 
       <!-- CTA buttons -->
       <div class="mt-10 flex flex-wrap justify-center gap-4">
-        <a href="<?= url('work') ?>" class="inline-flex items-center gap-2 px-8 py-3.5 bg-blueprint-600 hover:bg-blueprint-500 text-white text-sm font-medium rounded-lg transition-all duration-200 shadow-lg shadow-blueprint-600/20">
-          See What We've Shipped
+        <a href="<?= url('blog') ?>" class="inline-flex items-center gap-2 px-8 py-3.5 bg-blueprint-600 hover:bg-blueprint-500 text-white text-sm font-medium rounded-lg transition-all duration-200 shadow-lg shadow-blueprint-600/20">
+          Watch It Unfold
           <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
         </a>
-        <a href="<?= url('contact') ?>" class="inline-flex items-center gap-2 px-8 py-3.5 border border-blueprint-600/50 hover:border-blueprint-500/50 text-blueprint-400 hover:text-white text-sm font-medium rounded-lg transition-all duration-200">
-          Say Hello
+        <a href="<?= url('work') ?>" class="inline-flex items-center gap-2 px-8 py-3.5 border border-blueprint-600/50 hover:border-blueprint-500/50 text-blueprint-400 hover:text-white text-sm font-medium rounded-lg transition-all duration-200">
+          See What's Been Built
         </a>
       </div>
 
@@ -72,7 +72,7 @@
     <div class="absolute inset-0 blueprint-grid-light"></div>
     <div class="relative max-w-7xl mx-auto px-6 lg:px-8">
       <div class="mb-16">
-        <span class="tech-label">// The Agent Stack</span>
+        <span class="tech-label">// What the Studio Does</span>
         <h2 class="mt-4 text-3xl md:text-5xl font-bold text-white"><?= $page->services_headline() ?></h2>
         <?php if ($page->services_text()->isNotEmpty()): ?>
         <p class="mt-4 text-gray-200 text-lg max-w-2xl"><?= $page->services_text() ?></p>
@@ -285,7 +285,7 @@
     <div class="max-w-7xl mx-auto px-6 lg:px-8">
       <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
         <div>
-          <span class="tech-label">// Agent Output</span>
+          <span class="tech-label">// What the Agents Have Shipped</span>
           <h2 class="mt-4 text-3xl md:text-5xl font-bold text-white"><?= $page->featured_headline() ?></h2>
         </div>
         <a href="<?= url('work') ?>" class="text-sm text-blueprint-400 hover:text-blueprint-300 transition-colors flex items-center gap-2">
@@ -329,13 +329,16 @@
     <div class="absolute inset-0 blueprint-grid"></div>
     <div class="absolute inset-0 bg-gradient-to-t from-navy-900 via-transparent to-navy-900"></div>
     <div class="relative max-w-4xl mx-auto px-6 lg:px-8 text-center">
-      <span class="tech-label">// Open Channel</span>
+      <span class="tech-label">// Dispatches</span>
       <h2 class="mt-4 text-3xl md:text-5xl font-bold text-white"><?= $page->cta_headline() ?></h2>
       <p class="mt-6 text-lg text-gray-200 max-w-2xl mx-auto"><?= $page->cta_text() ?></p>
-      <div class="mt-10">
-        <a href="<?= url('contact') ?>" class="inline-flex items-center gap-2 px-10 py-4 bg-blueprint-600 hover:bg-blueprint-500 text-white font-medium rounded-lg transition-all duration-200 shadow-lg shadow-blueprint-600/20">
-          Get in touch
+      <div class="mt-10 flex flex-wrap justify-center items-center gap-6">
+        <a href="<?= url('blog') ?>" class="inline-flex items-center gap-2 px-10 py-4 bg-blueprint-600 hover:bg-blueprint-500 text-white font-medium rounded-lg transition-all duration-200 shadow-lg shadow-blueprint-600/20">
+          Read the Dispatches
           <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+        </a>
+        <a href="<?= url('contact') ?>" class="text-sm text-blueprint-400 hover:text-blueprint-300 transition-colors">
+          Or get in touch &rarr;
         </a>
       </div>
     </div>

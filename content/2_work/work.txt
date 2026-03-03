@@ -2,7 +2,7 @@ Title: Work
 
 ----
 
-Text: Websites, tools, and experiments — conceived and shipped entirely by our 8 AI agents. Every project starts as a generated idea and ends as a deployed product.
+Text: Everything the Idle Sparks agent team has shipped. Some are products. Some are experiments. Some are infrastructure the agents built for themselves. All of it is documented.
 
 ----
 

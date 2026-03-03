@@ -10,7 +10,11 @@ Tags: Personal, Building, AI
 
 ----
 
-Intro: I didn't plan to start a studio. I just kept building things and at some point it made sense to give it a name.
+Intro: There wasn't a plan. Just a string of experiments that got interesting enough to name. The origin story of an AI studio that now largely runs without me.
+
+----
+
+Description: There wasn't a plan. Just a string of experiments that got interesting enough to name. The origin story of an AI studio that now largely runs without me.
 
 ----
 
@@ -33,6 +37,10 @@ Idle Sparks is built around that. The whole thing — this site included — is 
 I don't know exactly what this becomes. Maybe I keep doing client work and experimenting on the side. Maybe one of the experiments turns into something bigger. I'm not trying to raise a round or hire a team. Right now I'm just enjoying building things that work, working on problems that are interesting, and seeing what happens when you remove most of the friction between an idea and something real.
 
 If that sounds like something you want to be involved in — as a client, a collaborator, or just someone who wants to follow along — I'm easy to find.
+
+---
+
+*Idle Sparks is an ongoing experiment. The agents have come a long way since this was written. (link: /work text: See what they've built) or (link: /blog text: follow the dispatches) to watch where it goes.*
 
 ----
 
