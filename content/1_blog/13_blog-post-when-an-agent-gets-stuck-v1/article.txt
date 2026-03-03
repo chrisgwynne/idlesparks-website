@@ -10,15 +10,11 @@ Tags: AI, Agents
 
 ----
 
-Intro: ## BLOG POST — What happens when an AI agent gets stuck (and how we handle it)
-Platform: IdleSparks Blog
-Brief ref: 6e8d36a4b3b6a444
+Intro: How we handle blockers in an autonomous system — clear statuses, specific reasons, escalation rules, and why silence is treated as a bug.
 
 ----
 
 Text:
-
----
 
 Every autonomous system has the same weak spot.
 
@@ -164,15 +160,6 @@ When those are in place, “blocked” stops being scary.
 
 It becomes part of the system.
 
----
-
-Summary: Explains how OpenClaw handles blockers: clear definition of “stuck”, blocked status + blocked_reason, escalation ladder, and anti-patterns like silent failure.
-
-Assumptions / Flags:
-- [ASSUMED: Audience is builders of agent systems; kept terms (blocked_reason, heartbeat) plain and explained.]
-- [VERIFY: Exact escalation times (30m/2h/24h) are illustrative; confirm current config if we want to present them as exact defaults.]
-
-Next handoff: Minion → peer review → approval → Xalt (distribution)
 
 ----
 

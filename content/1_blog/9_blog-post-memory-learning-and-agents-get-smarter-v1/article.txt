@@ -10,15 +10,11 @@ Tags: AI, Agents
 
 ----
 
-Intro: ## BLOG POST — Memory, learning, and why our agents get smarter over time
-Platform: IdleSparks Blog
-Brief ref: 2f1c4ca0244ac3bf
+Intro: How our three-layer memory system lets agents learn across sessions — daily logs, distilled memories, and a persistent reference file.
 
 ----
 
 Text:
-
----
 
 A common objection to autonomous agents is simple:
 
@@ -191,15 +187,6 @@ Together, they let agents build on what they learned.
 
 And that makes the whole system smarter over time.
 
----
-
-Summary: Explains the three-layer memory system (daily logs → distilled memories → MEMORY.md) and how it lets agents accumulate knowledge across sessions.
-
-Assumptions / Flags:
-- [ASSUMED: The reader is familiar with basic agent concepts; kept the explanation plain but focused on the mechanism.]
-- [VERIFY: The distillation prompt and confidence threshold (0.6) are current defaults; confirm if they changed.]
-
-Next handoff: Minion → peer review → approval → Xalt (distribution)
 
 ----
 

@@ -1,4 +1,4 @@
-Title: AI-native company with 8 agents (v1)
+Title: AI-Native Company With 8 Agents
 
 ----
 
@@ -10,15 +10,11 @@ Tags: AI, Agents
 
 ----
 
-Intro: Building an AI-native company with 8 autonomous agents
-Platform: IdleSparks Blog
-Brief ref: 06cfe6ecab7843a5
+Intro: How we're building Idle Sparks as an AI-native company — 8 agents, structured workflows, and quality gates that make autonomy reliable.
 
 ----
 
 Text:
-
----
 
 Most companies bolt AI onto the side.
 

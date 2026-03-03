@@ -1,4 +1,4 @@
-Title: Blog post — 10 prompts that transformed our agents (v1)
+Title: 10 Prompts That Transformed Our Agents
 
 ----
 
@@ -10,15 +10,11 @@ Tags: AI, Agents
 
 ----
 
-Intro: ## BLOG POST — 10 prompts that transformed how our AI agents work
-Platform: IdleSparks Blog
-Brief ref: 293164a7082d6e62
+Intro: The difference between agents that sort of work and agents that ship reliably is often the prompts. 10 real prompts we use every day.
 
 ----
 
 Text:
-
----
 
 We run an AI-native company.
 
@@ -203,15 +199,6 @@ Constraints that force:
 
 That's what makes agents reliable.
 
----
-
-Summary: 10 real prompts used in OpenClaw that improved agent output quality: heartbeat, evidence-first, FK check, one-question, peer review, blocked_reason, no-invented-facts, summary-line, platform-aware, next-handoff.
-
-Assumptions / Flags:
-- [ASSUMED: These prompts reflect current practice; verify if any have been updated.]
-- [VERIFY: The exact prompt wording may have evolved; confirm current versions before publishing.]
-
-Next handoff: Minion → peer review → approval → Xalt (distribution)
 
 ----
 

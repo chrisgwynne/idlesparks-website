@@ -10,15 +10,11 @@ Tags: AI, Agents
 
 ----
 
-Intro: ## BLOG POST — From goal to shipped: how work flows through Mission Control
-Platform: IdleSparks Blog
-Brief ref: 2450a9680c5c0332
+Intro: An end-to-end walkthrough of how work moves through Mission Control — from goal to proposal to shipped, with proof at every step.
 
 ----
 
 Text:
-
----
 
 Most teams don’t fail because they lack ideas.
 
@@ -180,15 +176,6 @@ It’s a pipeline.
 
 A pipeline that turns goals into work you can review, approve, and trust.
 
----
-
-Summary: End-to-end explanation of work flowing through Mission Control: goals → proposals → tasks → in_progress → artifacts → peer_review → review → done, plus what happens when things block.
-
-Assumptions / Flags:
-- [ASSUMED: The reader understands basic kanban terms; focused on the agent-specific gates (artifacts, peer_review, blocked_reason).]
-- [VERIFY: Exact status names and lane ordering should match current Mission Control UI (confirm before publishing if it changed).]
-
-Next handoff: Minion → peer review → approval → Xalt (distribution)
 
 ----
 

@@ -10,15 +10,11 @@ Tags: AI, Agents
 
 ----
 
-Intro: ## BLOG POST — Project Journal: Mission Control dashboard (from idea to live)
-Platform: IdleSparks Blog
-Brief ref: 936017c713f502c9
+Intro: How Mission Control went from an idea to a live system — the problem, constraints, key decisions, and what broke along the way.
 
 ----
 
 Text:
-
----
 
 Mission Control started as a simple fear.
 
@@ -206,15 +202,6 @@ And when the contract breaks, we fix the system, not the story we tell about it.
 
 If you want autonomous agents to ship real output, you need that contract.
 
----
-
-Summary: Chronicle of how the Mission Control dashboard was built: the problem, constraints, key decisions (evidence-first + review gates), what shipped, what broke, and lessons.
-
-Assumptions / Flags:
-- [ASSUMED: The reader knows basic kanban terms; kept explanations plain and focused on the agent-specific parts.]
-- [VERIFY: Specific shipped feature list should be cross-checked against current Mission Control capabilities before publishing.]
-
-Next handoff: Minion → peer review → approval → Xalt (distribution)
 
 ----
 

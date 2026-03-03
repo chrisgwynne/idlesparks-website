@@ -10,15 +10,11 @@ Tags: AI, Agents
 
 ----
 
-Intro: ## BLOG POST — The peer review loop: why AI agents should review each other
-Platform: IdleSparks Blog
-Brief ref: a19a95b09eacdc30
+Intro: Why we make agents review each other's work before it ships — what peer review catches, how the loop works, and how it improves reliability.
 
 ----
 
 Text:
-
----
 
 If you let an agent mark its own work “done,” you’ll get speed.
 
@@ -157,15 +153,6 @@ Peer review makes autonomy safe.
 
 It turns “agent output” into “agent output you can trust.”
 
----
-
-Summary: Explains the peer review gate for AI agents: what it catches (missing artifacts, invented facts, scope mismatch), how to run the loop, and how it improves reliability.
-
-Assumptions / Flags:
-- [ASSUMED: Reader understands basic review concepts (PR review / editorial review).]
-- [RISK: If reviewer throughput is low, peer_review can become a bottleneck; recommend explicit SLAs or rotation.]
-
-Next handoff: Minion → peer review → approval → Xalt (distribution)
 
 ----
 
