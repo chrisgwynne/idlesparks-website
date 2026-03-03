@@ -1,4 +1,4 @@
-Title: Blog post — When an agent gets stuck (v1)
+Title: When an Agent Gets Stuck
 
 ----
 

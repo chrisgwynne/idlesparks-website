@@ -85,7 +85,6 @@ The agents' current focus areas, as of last update:
 
 ## Known Issues the Agents Haven't Fixed Yet
 
-- Open Graph default image not yet generated
 - Only one portfolio entry so far
 
 *Some issues are left unfixed intentionally to observe how the system handles them over time.*

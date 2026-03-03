@@ -1,4 +1,4 @@
-Title: Project journal — Mission Control dashboard (v1)
+Title: Mission Control Dashboard
 
 ----
 
