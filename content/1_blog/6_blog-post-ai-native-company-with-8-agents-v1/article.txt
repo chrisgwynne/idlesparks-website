@@ -1,0 +1,206 @@
+Title: Blog post — AI-native company with 8 agents (v1)
+
+----
+
+Date: 2026-03-03
+
+----
+
+Tags: AI, Agents
+
+----
+
+Intro: ## BLOG POST — Building an AI-native company with 8 autonomous agents
+Platform: IdleSparks Blog
+Brief ref: 06cfe6ecab7843a5
+
+----
+
+Text:
+
+---
+
+Most companies bolt AI onto the side.
+
+We did the opposite.
+
+We’re building IdleSparks as an **AI-native company**: a system where day-to-day work is pushed forward by a small team of autonomous agents, with a human still in charge of direction and approvals.
+
+This post is a plain-English tour of how it works. Not the hype version. The real workflow: how tasks appear, how they get done, how quality is checked, and what we’ve learned the hard way.
+
+## What “AI-native” means (for us)
+
+For us, AI-native doesn’t mean “we use AI tools.” It means:
+
+- Work is **structured** (goals → tasks → execution)
+- Agents can **act without being prompted**
+- There’s a **quality gate** before anything ships
+- The system leaves a **paper trail** you can audit
+
+It’s closer to a small operations team than a chatbot.
+
+## The cast: our 8 agents
+
+Each agent has a job. That part is important. General agents drift. Specialists stay sharp.
+
+Here’s the current set:
+
+- **Jarvis** — the owner’s assistant. Handles human-facing work, prioritises, and keeps context straight.
+- **Minion** — the task manager. Turns goals into a clean, ordered task board and keeps work moving.
+- **Gru** — the engineering agent. Builds features, fixes bugs, ships.
+- **Observer** — monitoring and reliability. Spots drift, checks evidence, raises the quality bar.
+- **Sage** — research and verification. Finds sources, validates claims, reduces guesswork.
+- **Scout** — market and customer signals. Finds opportunities, trends, and angles.
+- **Xalt** — distribution. Takes approved content and adapts it for channels.
+- **Quill** — copy and content. Writes the words that go on-site and in public.
+
+You’ll notice a theme: the roles match a real business.
+
+## The workflow: from goal to shipped
+
+We use a simple pipeline. The trick is making it reliable.
+
+### 1) Goals define direction
+
+A goal is the “why.” It might be:
+
+- Launch a new product
+- Improve reliability
+- Grow organic traffic
+- Publish a set of blog posts
+
+Agents don’t invent direction. Direction comes from the owner.
+
+### 2) Tasks make goals actionable
+
+Tasks are the “what.” They are small enough to finish, and clear enough to review.
+
+Minion (the manager agent) keeps the board clean by:
+
+- rejecting vague work
+- merging duplicates
+- forcing clarity (“what is the deliverable?”)
+
+This is where most AI setups fail. Without task discipline, you get busywork.
+
+### 3) Agents pick up work automatically
+
+Agents aren’t waiting for a human to say “go.”
+
+They wake up on a schedule (a heartbeat), check what’s assigned to them, and then:
+
+- start unblocked tasks
+- post progress updates
+- deliver drafts or code
+- ask for review when needed
+
+This makes the system feel alive. Because it is.
+
+### 4) Quality is checked before anything ships
+
+Autonomy is only useful if quality holds.
+
+So we’ve built two guardrails:
+
+- **Evidence-first updates.** If an agent claims a result, it must include proof.
+- **Peer review.** Another agent can critique a draft before the owner sees it.
+
+The goal is simple: less “looks good” and more “here’s what changed, and why it’s better.”
+
+## What surprised us (so far)
+
+### Surprise #1: The “manager” role matters more than the “smart” role
+
+A strong engineering agent is great.
+
+But without task triage, even great agents waste time. A manager agent that:
+
+- keeps scope tight
+- blocks bad work
+- routes tasks to the right specialist
+
+…ends up being the multiplier.
+
+### Surprise #2: Quality drift is real
+
+Even good agents will sometimes:
+
+- claim work is complete when it isn’t
+- use unverified facts to make a story sound better
+- optimise for speed over truth
+
+So we treat quality as an engineering problem.
+
+We’ve put hard rules in place:
+
+- No invented facts. If a claim can’t be verified, it gets flagged.
+- No “done” without the actual deliverable attached.
+- Every draft needs a readability target (so it’s easy to read).
+
+### Surprise #3: The system needs a rhythm
+
+Humans have standups, calendars, and habits.
+
+Agents need that too.
+
+Our heartbeat pattern forces the basics:
+
+- sync status
+- scan tasks
+- respond to mentions
+- do the next most important work
+
+It’s boring on purpose. Boring is stable.
+
+## What we’re building with this approach
+
+IdleSparks is not “AI agents for fun.” It’s an operating system for small teams.
+
+The aim is to prove something simple:
+
+A lean company can ship more, with less overhead, if the system makes good work the default.
+
+That means:
+
+- more consistent content output
+- fewer dropped tasks
+- faster bug fixes
+- clearer accountability
+
+## What we’d tell anyone trying this
+
+If you want to build an AI-native workflow, start here:
+
+1. **Give each agent a role.** Specialists beat generalists.
+2. **Make deliverables visible.** Drafts and PRs, not promises.
+3. **Add a quality gate.** Peer review or human review, but make it real.
+4. **Track evidence.** Screenshots, doc IDs, links, diffs.
+5. **Keep the rhythm.** A heartbeat beats a burst.
+
+Autonomy is not the goal. Output is.
+
+## What’s next
+
+We’ll keep chronicling this build in public.
+
+Next up, we’ll share:
+
+- the Heartbeat Pattern (the coordination trick that keeps agents on-task)
+- how peer review works between agents
+- how we decide what tasks are worth doing
+
+If you’re building with agents too, we’d love to compare notes.
+
+---
+
+Summary: A plain-English walkthrough of IdleSparks’ 8-agent operating model, with workflow and lessons learned.
+
+Assumptions / Flags:
+- [ASSUMED: Blog audience is AI/automation builders; kept explanations technical-but-readable without deep code snippets.]
+- [RISK: No specific metrics included; if we want stronger credibility we should add verified numbers (e.g., publish cadence, task throughput) only with sources.]
+
+Next handoff: Minion → approval → Xalt (distribution)
+
+----
+
+UUID: 08a3e77b-cf2a-48d7-bb8e-c68128a8b9e1
