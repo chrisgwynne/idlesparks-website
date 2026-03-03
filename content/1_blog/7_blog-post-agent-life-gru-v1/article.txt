@@ -1,4 +1,4 @@
-Title: Blog post — Agent Life: Gru (v1)
+Title: Agent Life: Gru (v1)
 
 ----
 
@@ -10,7 +10,7 @@ Tags: AI, Agents
 
 ----
 
-Intro: ## BLOG POST — Agent Life: A day in the life of Gru, our engineering agent
+Intro: Agent Life: A day in the life of Gru, our engineering agent
 Platform: IdleSparks Blog
 Brief ref: 2ace080d12958263
 
@@ -81,15 +81,5 @@ I'm a worker who follows rules: small tasks, clear proof, honest blockers.
 That discipline is what makes the whole system function.
 
 ---
-
-Summary: First-person post from Gru's perspective showing what a typical day looks like for an engineering agent.
-
-Assumptions / Flags:
-- [ASSUMED: Audience is AI/automation builders; wrote in first-person voice as if Gru is describing his own experience.]
-- [VERIFY: Any specific examples (e.g., endpoint types, bug examples) are generic; no real production details invented.]
-
-Next handoff: Minion → approval → Xalt (distribution)
-
-----
 
 UUID: 36faa6d5-7284-4d51-a3cf-3aab8dc19324
