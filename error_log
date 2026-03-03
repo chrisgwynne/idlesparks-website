@@ -28,3 +28,35 @@ Stack trace:
 #10 /home/idlesparks/public_html/kirby/src/Cms/App.php(1205): Kirby\Cms\App->call('api/auth/login', 'POST')
 #11 /home/idlesparks/public_html/index.php(5): Kirby\Cms\App->render()
 #12 {main}
+[03-Mar-2026 20:58:33 UTC] Kirby\Exception\InvalidArgumentException: Wrong password in /home/idlesparks/public_html/kirby/src/Cms/User.php:738
+Stack trace:
+#0 /home/idlesparks/public_html/kirby/src/Cms/Auth.php(543): Kirby\Cms\User->validatePassword(Object(SensitiveParameterValue))
+#1 /home/idlesparks/public_html/kirby/src/Cms/Auth.php(410): Kirby\Cms\Auth->validatePassword('hello@idlespark...', Object(SensitiveParameterValue))
+#2 /home/idlesparks/public_html/kirby/config/api/routes/auth.php(78): Kirby\Cms\Auth->login('hello@idlespark...', Object(SensitiveParameterValue), false)
+#3 [internal function]: Kirby\Cms\Api->{closure}()
+#4 /home/idlesparks/public_html/kirby/src/Api/Api.php(189): Closure->call(Object(Kirby\Cms\Api))
+#5 /home/idlesparks/public_html/kirby/src/Cms/Api.php(49): Kirby\Api\Api->call('auth/login', 'POST', Array)
+#6 /home/idlesparks/public_html/kirby/src/Api/Api.php(461): Kirby\Cms\Api->call('auth/login', 'POST', Array)
+#7 /home/idlesparks/public_html/kirby/config/routes.php(74): Kirby\Api\Api->render('auth/login', 'POST', Array)
+#8 [internal function]: Kirby\Http\Route->{closure}('auth/login')
+#9 /home/idlesparks/public_html/kirby/src/Http/Router.php(122): Closure->call(Object(Kirby\Http\Route), 'auth/login')
+#10 /home/idlesparks/public_html/kirby/src/Cms/App.php(347): Kirby\Http\Router->call('api/auth/login', 'POST')
+#11 /home/idlesparks/public_html/kirby/src/Cms/App.php(1205): Kirby\Cms\App->call('api/auth/login', 'POST')
+#12 /home/idlesparks/public_html/index.php(5): Kirby\Cms\App->render()
+#13 {main}
+[03-Mar-2026 20:58:37 UTC] Kirby\Exception\InvalidArgumentException: Wrong password in /home/idlesparks/public_html/kirby/src/Cms/User.php:738
+Stack trace:
+#0 /home/idlesparks/public_html/kirby/src/Cms/Auth.php(543): Kirby\Cms\User->validatePassword(Object(SensitiveParameterValue))
+#1 /home/idlesparks/public_html/kirby/src/Cms/Auth.php(410): Kirby\Cms\Auth->validatePassword('hello@idlespark...', Object(SensitiveParameterValue))
+#2 /home/idlesparks/public_html/kirby/config/api/routes/auth.php(78): Kirby\Cms\Auth->login('hello@idlespark...', Object(SensitiveParameterValue), false)
+#3 [internal function]: Kirby\Cms\Api->{closure}()
+#4 /home/idlesparks/public_html/kirby/src/Api/Api.php(189): Closure->call(Object(Kirby\Cms\Api))
+#5 /home/idlesparks/public_html/kirby/src/Cms/Api.php(49): Kirby\Api\Api->call('auth/login', 'POST', Array)
+#6 /home/idlesparks/public_html/kirby/src/Api/Api.php(461): Kirby\Cms\Api->call('auth/login', 'POST', Array)
+#7 /home/idlesparks/public_html/kirby/config/routes.php(74): Kirby\Api\Api->render('auth/login', 'POST', Array)
+#8 [internal function]: Kirby\Http\Route->{closure}('auth/login')
+#9 /home/idlesparks/public_html/kirby/src/Http/Router.php(122): Closure->call(Object(Kirby\Http\Route), 'auth/login')
+#10 /home/idlesparks/public_html/kirby/src/Cms/App.php(347): Kirby\Http\Router->call('api/auth/login', 'POST')
+#11 /home/idlesparks/public_html/kirby/src/Cms/App.php(1205): Kirby\Cms\App->call('api/auth/login', 'POST')
+#12 /home/idlesparks/public_html/index.php(5): Kirby\Cms\App->render()
+#13 {main}
