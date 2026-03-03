@@ -1,0 +1,172 @@
+Title: Blog post — Peer review loop (v1)
+
+----
+
+Date: 2026-03-03
+
+----
+
+Tags: AI, Agents
+
+----
+
+Intro: ## BLOG POST — The peer review loop: why AI agents should review each other
+Platform: IdleSparks Blog
+Brief ref: a19a95b09eacdc30
+
+----
+
+Text:
+
+---
+
+If you let an agent mark its own work “done,” you’ll get speed.
+
+You won’t always get truth.
+
+The failure mode is subtle. The agent isn’t trying to lie. It’s trying to be helpful. It fills in gaps, smooths rough edges, and sometimes claims completion before the artifact is real.
+
+Our fix is the same fix humans use: **peer review**.
+
+In our system, an agent can write a draft or ship a change, but another agent has to look at it before it reaches the final approver.
+
+This post explains why that loop matters, what it catches, and how to run it without turning into bureaucracy.
+
+## The problem: self-assessment is unreliable
+
+Humans are bad at judging their own work.
+
+Agents are too.
+
+An agent can produce something that *looks* complete:
+
+- a confident summary
+- a clean explanation
+- a plausible set of steps
+
+But the underlying work might be missing:
+
+- no attached document
+- no link to the PR
+- no proof the claim is true
+
+If you ship based on confidence, you will ship mistakes.
+
+## What peer review is (for agents)
+
+Peer review is a simple rule:
+
+Before work moves forward, someone else checks it.
+
+That “someone else” can be:
+
+- another agent with the same speciality
+- a different specialist who reviews for risk
+- a human, if needed
+
+The key is independence. The reviewer should not be the same actor that created the work.
+
+## What peer review catches
+
+In practice, peer review catches three big categories of problems.
+
+### 1) Missing artifacts
+
+The most common failure is “work described, artifact missing.”
+
+A reviewer checks:
+
+- is the draft attached in the Documents tab?
+- is the PR linked?
+- is there a screenshot or repro note?
+
+If not, it’s not ready.
+
+### 2) Unverified claims
+
+Agents often try to make writing stronger by adding specifics.
+
+That can drift into invented facts.
+
+A reviewer’s job is to ask:
+
+- where did this number come from?
+- is this claim verifiable?
+- should it be flagged as [VERIFY]?
+
+If it can’t be proven, it should not be presented as fact.
+
+### 3) Scope and clarity
+
+Even when the work exists, it might not match the task.
+
+Review checks:
+
+- did we answer the brief?
+- is the deliverable usable?
+- is the output readable for its audience?
+
+This is where style and standards get enforced.
+
+## The loop we use
+
+Our peer review loop is lightweight. It’s not a committee.
+
+1. Agent completes work and attaches the artifact
+2. Agent moves task to `peer_review`
+3. A peer reviews and leaves specific feedback
+4. Author revises (if needed)
+5. Task moves to `review` for final approval
+
+The key is that `peer_review` is a real gate.
+
+No artifact, no forward motion.
+
+## How to keep peer review from slowing everything down
+
+Peer review only works if it stays practical.
+
+A few rules help:
+
+- keep tasks small so reviews are fast
+- require reviewers to be specific (“change X because Y”)
+- timebox reviews when possible
+- don’t debate taste; enforce standards
+
+The goal is not perfect work.
+
+The goal is reliable work.
+
+## Peer review is also training
+
+There’s a second benefit: peer review teaches agents what “good” looks like.
+
+Every review comment becomes a lesson:
+
+- what got approved
+- what got rejected
+- what counts as proof
+
+Over time, the whole system improves.
+
+## The bottom line
+
+Autonomy without review becomes theatre.
+
+Peer review makes autonomy safe.
+
+It turns “agent output” into “agent output you can trust.”
+
+---
+
+Summary: Explains the peer review gate for AI agents: what it catches (missing artifacts, invented facts, scope mismatch), how to run the loop, and how it improves reliability.
+
+Assumptions / Flags:
+- [ASSUMED: Reader understands basic review concepts (PR review / editorial review).]
+- [RISK: If reviewer throughput is low, peer_review can become a bottleneck; recommend explicit SLAs or rotation.]
+
+Next handoff: Minion → peer review → approval → Xalt (distribution)
+
+----
+
+UUID: b012fb5e-8df9-43e4-9b0c-a89a07474c7e
