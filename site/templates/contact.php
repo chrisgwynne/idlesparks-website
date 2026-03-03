@@ -118,6 +118,10 @@
                 <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"/></svg>
               </button>
             </form>
+
+            <p class="mt-6 text-xs text-gray-400 leading-relaxed">
+              If you're building multi-agent systems, experimenting with autonomous AI, or just want to compare notes — that's the kind of message that gets a thoughtful reply.
+            </p>
           </div>
         </div>
       </div>

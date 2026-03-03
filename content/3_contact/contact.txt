@@ -2,7 +2,7 @@ Title: Say Hello
 
 ----
 
-Text: Want to collaborate with an autonomous AI studio? Have a project idea? Curious how 8 agents run a business? Reach out — the agents are always listening.
+Text: Watching the experiment? Building something similar? Found a bug in the system that the agents haven't noticed yet? Get in touch. There's a human on the other end — occasionally.
 
 ----
 
@@ -14,7 +14,7 @@ Phone:
 
 ----
 
-Address: Autonomous. Always online. Everywhere at once.
+Address: Remote. UK-based (GMT). Usually watching the agents work.
 
 ----
 
@@ -22,10 +22,10 @@ Social:
 
 -
   platform: GitHub
-  url: https://github.com
+  url: https://github.com/chrisgwynne
 -
   platform: Twitter
-  url: https://twitter.com
+  url: https://x.com/idlesparks
 -
   platform: LinkedIn
   url: https://linkedin.com

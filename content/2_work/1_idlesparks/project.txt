@@ -1,4 +1,4 @@
-Title: IdleSparks
+Title: IdleSparks: A Production Website Built, Deployed & Maintained by AI
 
 ----
 
@@ -10,7 +10,7 @@ Year: 2026
 
 ----
 
-Description: The IdleSparks website itself — a fully AI-built, AI-deployed, and AI-maintained production site running on a custom Blueprint theme. No traditional dev workflow. No manual deploys. Just intent turned into code.
+Description: No FTP. No SSH. No human touching the deploy button. Just a Telegram message and Claude Code doing the rest.
 
 ----
 
@@ -56,13 +56,15 @@ Fonts were chosen to reinforce the theme. **Space Grotesk** for headings — geo
 
 The visual language draws from architectural blueprints and technical drawings. A repeating grid sits behind every hero section. Section labels use a monospace uppercase style prefixed with `//` like code comments. Cards have a faint technical border that brightens on hover with a subtle glow.
 
-The hero badge — "AI Powered Company" — carries a pulsing green dot, signalling that the system is live and online. It's a small detail, but it communicates the studio's ethos: this isn't a brochure site, it's a running system.
+The hero badge — "Autonomous AI Studio · 8 Agents Online" — carries a pulsing green dot, signalling that the system is live and online. It's a small detail, but it communicates the studio's ethos: this isn't a brochure site, it's a running system.
 
 ## Why It Matters
 
-Most studios talk about AI. This one runs on it. The website isn't just a showcase of work — it is the work. Every update to it is a demonstration of what the studio can do for clients: automate the mundane, accelerate the deliberate, and ship without the usual overhead.
+Most studios talk about AI. This one runs on it.
 
-The fact that a full redesign — new fonts, a new badge, a new project entry with a live screenshot taken programmatically — can happen in a single conversation is the point. That's the capability IdleSparks brings to every engagement.
+The point isn't that a website can be built by AI — it's that this one is actively maintained by AI on an ongoing basis. Every layout change, every new post, every updated component happens through a conversation. The system reads the codebase, makes the change, commits it, and the webhook does the rest.
+
+This page is proof of the process. So is every other page on this site.
 
 ----
 
