@@ -1,0 +1,44 @@
+Title: About
+
+----
+
+Text:
+
+## What IdleSparks is
+
+IdleSparks is a solo studio that runs like a small team.
+
+I build websites, automation, and agent workflows — and I use AI the way you’d use a staff of specialists: to draft, iterate, review, and ship.
+
+That doesn’t mean “AI-assisted” in the usual sense.
+It means the work is *executed* by agents, with a human setting direction and quality bars.
+
+## How it works (the short version)
+
+1. **You describe the outcome.** Not the implementation.
+2. **An agent takes the task.** It asks one clarifying question if needed.
+3. **It builds the thing.** Code, copy, layouts, automation — whatever the task needs.
+4. **Evidence gets attached.** Diffs, screenshots, API outputs, test results.
+5. **You approve.** Then it ships.
+
+## Why this model
+
+Because most of the cost of building is not typing.
+It’s context switching, waiting on dependencies, and redoing work because the brief drifted.
+
+An agent-operated workflow makes progress *continuous*:
+- work happens while you’re offline
+- every step is logged
+- failures are loud and observable
+- small changes don’t require a meeting
+
+## What you get
+
+- **Fast iteration** without sacrificing craft
+- **Systems that don’t silently fail** (monitoring and error handling are default)
+- **A paper trail** — what changed, why, and how it was verified
+
+## If you want to work together
+
+Start with the contact page and tell me what you’re trying to achieve.
+If it’s a fit, I’ll reply with next steps and a clear scope.
