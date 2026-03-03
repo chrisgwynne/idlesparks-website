@@ -1,0 +1,206 @@
+Title: Blog post — Memory, learning, and agents get smarter (v1)
+
+----
+
+Date: 2026-03-03
+
+----
+
+Tags: AI, Agents
+
+----
+
+Intro: ## BLOG POST — Memory, learning, and why our agents get smarter over time
+Platform: IdleSparks Blog
+Brief ref: 2f1c4ca0244ac3bf
+
+----
+
+Text:
+
+---
+
+A common objection to autonomous agents is simple:
+
+How do they learn?
+
+Human teams learn through memory: notes, documents, conversations, repeated mistakes.
+
+But most agent setups reset every session. The agent wakes up fresh. It doesn't remember what happened yesterday.
+
+That limits how useful they can be.
+
+The problem is simple: stateless agents forget everything.
+
+Every time an agent runs, it's a fresh start. You can prompt it with context, but that's expensive and slow. And it doesn't build on what it learned last time.
+
+In practice, that means:
+
+- the same mistakes repeat
+- brand voice details get lost
+- product knowledge has to be re-explained every session
+- lessons from reviews disappear
+
+That's not a capability problem. It's a memory problem.
+
+## Layer 1: daily logs (raw, automatic)
+
+Every session, the agent writes to a daily log file.
+
+This is automatic and low-effort.
+
+The log captures:
+
+- what was briefed
+- what was written
+- what came back for revision and why
+- any flags or assumptions
+
+It's not polished. It's a record.
+
+The point is simple: if something happened today, it's in the log.
+
+## Layer 2: distilled memories (curated, nightly)
+
+Raw logs aren't useful on their own.
+
+So every night, we run a distillation step.
+
+The agent reads the day's log and extracts:
+
+- patterns that worked
+- mistakes to avoid
+- preferences that emerged
+- new product or voice details
+
+These are written as structured memories with confidence scores.
+
+This is the layer where learning actually happens.
+
+## Layer 3: MEMORY.md (reference, persistent)
+
+The final layer is a curated reference file.
+
+It's not everything. It's the highlights.
+
+Key sections include:
+
+- brand voice notes (tone, style, what to avoid)
+- product knowledge (materials, processes, USPs)
+- platform-specific standards (Etsy, Shopify, social)
+- lessons learned (what worked, what tanked)
+
+MEMORY.md is read at the start of every session.
+
+Before the agent does anything else, it loads this reference.
+
+That means it starts with context, not zero.
+
+## How this makes agents smarter
+
+Three ways:
+
+### 1) Voice consistency
+
+MEMORY.md captures brand voice rules.
+
+Every post Quill writes starts with those rules loaded.
+
+That means voice stays consistent even across sessions.
+
+### 2) Fewer repeat mistakes
+
+If a draft was rejected for being too dense, that lesson is in MEMORY.md.
+
+Next time, the agent checks before submitting.
+
+It doesn't make the same mistake twice.
+
+### 3) Faster onboarding
+
+When we add a new product or service, we write it to MEMORY.md.
+
+The next session, the agent already knows about it.
+
+No need to re-explain in every brief.
+
+## What stays in the daily log (and why)
+
+Not everything belongs in MEMORY.md.
+
+Raw details stay in the daily log:
+
+- exact word counts
+- specific FK scores
+- draft versions
+- task IDs
+
+These are useful for debugging, but they don't need to be in the reference.
+
+The distillation step decides what promotes.
+
+## The distillation prompt we use
+
+Here's the core prompt we use for the nightly distillation step:
+
+```
+Read today's log. Extract:
+- 1–3 patterns that worked (with evidence)
+- 1–3 mistakes to avoid (with context)
+- any new preferences or facts to add to MEMORY.md
+Format each as: type, content, confidence (0.6–1.0)
+```
+
+This keeps the curation disciplined.
+
+## What we learned
+
+Two surprises so far:
+
+### Surprise 1: less is more
+
+We initially tried to capture everything.
+
+That made MEMORY.md too big to read.
+
+Now we limit it to the essentials: voice, products, platform rules, lessons.
+
+### Surprise 2: confidence scores matter
+
+Not every memory is worth keeping.
+
+The confidence score (0.6–1.0) helps filter.
+
+Below 0.6, it stays in the log but doesn't promote.
+
+That prevents noise from building up.
+
+## The takeaway
+
+Agents can learn.
+
+But they need a memory system.
+
+Ours has three layers:
+
+- daily logs (raw records)
+- distilled memories (nightly extracts)
+- MEMORY.md (persistent reference)
+
+Together, they let agents build on what they learned.
+
+And that makes the whole system smarter over time.
+
+---
+
+Summary: Explains the three-layer memory system (daily logs → distilled memories → MEMORY.md) and how it lets agents accumulate knowledge across sessions.
+
+Assumptions / Flags:
+- [ASSUMED: The reader is familiar with basic agent concepts; kept the explanation plain but focused on the mechanism.]
+- [VERIFY: The distillation prompt and confidence threshold (0.6) are current defaults; confirm if they changed.]
+
+Next handoff: Minion → peer review → approval → Xalt (distribution)
+
+----
+
+UUID: 0e646f49-1efd-423f-88bb-432d89080c80
