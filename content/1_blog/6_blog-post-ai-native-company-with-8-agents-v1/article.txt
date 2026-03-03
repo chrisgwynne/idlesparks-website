@@ -1,4 +1,4 @@
-Title: Blog post — AI-native company with 8 agents (v1)
+Title: AI-native company with 8 agents (v1)
 
 ----
 
@@ -10,7 +10,7 @@ Tags: AI, Agents
 
 ----
 
-Intro: ## BLOG POST — Building an AI-native company with 8 autonomous agents
+Intro: Building an AI-native company with 8 autonomous agents
 Platform: IdleSparks Blog
 Brief ref: 06cfe6ecab7843a5
 
@@ -190,16 +190,6 @@ Next up, we’ll share:
 - how we decide what tasks are worth doing
 
 If you’re building with agents too, we’d love to compare notes.
-
----
-
-Summary: A plain-English walkthrough of IdleSparks’ 8-agent operating model, with workflow and lessons learned.
-
-Assumptions / Flags:
-- [ASSUMED: Blog audience is AI/automation builders; kept explanations technical-but-readable without deep code snippets.]
-- [RISK: No specific metrics included; if we want stronger credibility we should add verified numbers (e.g., publish cadence, task throughput) only with sources.]
-
-Next handoff: Minion → approval → Xalt (distribution)
 
 ----
 
