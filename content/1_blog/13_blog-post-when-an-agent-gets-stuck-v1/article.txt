@@ -1,0 +1,179 @@
+Title: Blog post — When an agent gets stuck (v1)
+
+----
+
+Date: 2026-03-03
+
+----
+
+Tags: AI, Agents
+
+----
+
+Intro: ## BLOG POST — What happens when an AI agent gets stuck (and how we handle it)
+Platform: IdleSparks Blog
+Brief ref: 6e8d36a4b3b6a444
+
+----
+
+Text:
+
+---
+
+Every autonomous system has the same weak spot.
+
+The stuck state.
+
+In a human team, someone says: “I’m blocked.”
+
+In an agent team, the risk is quieter. Work can stall without drama. A task can sit in `in_progress` while nothing moves.
+
+We built OpenClaw to treat “stuck” as a first-class concept.
+
+Not a failure. A normal condition with a clear path out.
+
+This post explains how we handle blockers: what “blocked” means, how we escalate, and how we keep the board honest.
+
+## First: define what “stuck” means
+
+A task is stuck when progress cannot continue without a change in inputs.
+
+That can be:
+
+- missing info (“what does done look like?”)
+- a dependency (waiting on another task)
+- a permissions issue
+- a broken endpoint
+- a decision that only a human can make
+
+The key is that “stuck” is not “slow.”
+
+It is “cannot proceed.”
+
+## The two tools: status and evidence
+
+We use two simple tools.
+
+### 1) A blocked status
+
+When an agent is blocked, it moves the task to `blocked`.
+
+But it must also set a reason.
+
+### 2) A blocked_reason
+
+A good blocked_reason is specific:
+
+- what is blocking
+- who can unblock it
+- what the next action is
+
+Bad blocked_reason:
+
+- “blocked”
+- “waiting”
+
+Good blocked_reason:
+
+- “Waiting on doc upload endpoint fix (HTTP 500). Owner: Gru/Observer. Will retry after deploy.”
+
+This makes the blocker actionable.
+
+## The escalation ladder
+
+A blocker is only useful if it triggers action.
+
+So we use time-based escalation rules.
+
+Example ladder:
+
+- **30 minutes:** self-check + post a progress note
+- **2 hours:** @mention the owner who can unblock
+- **24 hours:** escalation event fires automatically and the human gets notified
+
+The exact times can change.
+
+What matters is the principle: stuck tasks don’t get to hide.
+
+## What happens when an agent can’t attach proof
+
+One of the most common stuck states is “I have the output, but I can’t submit it.”
+
+For example:
+
+- document upload route returns 500
+- PR checks fail due to CI issues
+- permission denied on a required resource
+
+In those cases, the agent should:
+
+1) keep the output staged locally
+2) post a comment with the failure evidence (timestamp, endpoint, error)
+3) set blocked_reason with an owner
+4) retry on a schedule
+
+This prevents status theatre.
+
+The work is real, but the handoff is blocked.
+
+## The anti-pattern: silent failure
+
+The worst thing an agent can do is fail silently.
+
+A silent failure is when:
+
+- a task stays `in_progress`
+- there is no recent comment
+- there is no artifact
+- there is no blocker reason
+
+That’s how agent systems lose trust.
+
+So we treat “silence” as a bug.
+
+Our heartbeat loop checks for quiet tasks and forces a progress update.
+
+## How humans fit into unblocking
+
+Not every blocker is technical.
+
+Sometimes the blocker is a decision:
+
+- should we ship this now?
+- does this claim need a source?
+- is this the right tone?
+
+In those cases, the agent should escalate early.
+
+A clean @mention with a one-line question is better than hours of guessing.
+
+## The takeaway
+
+Autonomy isn’t about never getting stuck.
+
+It’s about getting unstuck fast.
+
+That requires:
+
+- clear statuses
+- specific blocked reasons
+- escalation rules
+- evidence-first updates
+
+When those are in place, “blocked” stops being scary.
+
+It becomes part of the system.
+
+---
+
+Summary: Explains how OpenClaw handles blockers: clear definition of “stuck”, blocked status + blocked_reason, escalation ladder, and anti-patterns like silent failure.
+
+Assumptions / Flags:
+- [ASSUMED: Audience is builders of agent systems; kept terms (blocked_reason, heartbeat) plain and explained.]
+- [VERIFY: Exact escalation times (30m/2h/24h) are illustrative; confirm current config if we want to present them as exact defaults.]
+
+Next handoff: Minion → peer review → approval → Xalt (distribution)
+
+----
+
+UUID: c39fe736-5ff3-4b24-9549-dede3d8e02aa
