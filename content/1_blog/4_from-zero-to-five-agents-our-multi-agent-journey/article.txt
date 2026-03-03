@@ -20,7 +20,9 @@ Description: We started with one generalist agent and hit the ceiling fast — c
 
 Text:
 
-This is the story of how our multi-agent system evolved. More importantly, it's a guide for anyone wondering when to split their AI assistant into multiple specialists, and how to keep them from stepping on each other's toes.
+This is the story of how the Idle Sparks agent team grew from one overwhelmed generalist to five specialists — and what a multi-agent system actually looks like from the inside.
+
+More importantly, it's a guide for anyone wondering when to split their AI assistant into multiple specialists, and how to keep them from stepping on each other's toes.
 
 ## The Beginning: One Agent to Rule Them All
 

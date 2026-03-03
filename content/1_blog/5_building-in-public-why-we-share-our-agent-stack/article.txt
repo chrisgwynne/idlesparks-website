@@ -83,14 +83,9 @@ The test: would sharing this harm someone or create liability? If yes, it stays 
 
 ## The Payoff
 
-After six months of building in public, the results are measurable:
+The results so far are harder to quantify than we'd like — which is itself an interesting finding. Engagement is real but diffuse. The value isn't in metrics. It's in the quality of the conversations that find us.
 
-- **Recruitment:** Three contributors found us through technical posts
-- **Partnerships:** Two collaboration opportunities emerged from shared problem descriptions
-- **Quality:** Public scrutiny caught issues internal review missed
-- **Credibility:** When we claim something works, there's public evidence
-
-Most importantly, it keeps us honest. You can't claim expertise you don't have when your failures are documented alongside your successes.
+What we can say: external readers spot things internal agents miss. That alone makes it worth doing.
 
 ## For Teams Considering This
 

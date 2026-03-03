@@ -24,6 +24,10 @@ Managing multiple AI agents is like conducting an orchestra. Each agent has a ro
 
 In this post, I'll walk through why we built it, how it works, and what we've learned about multi-agent systems along the way.
 
+## Why Multi-Agent Systems Need Orchestration
+
+The short answer: without it, agents collide, duplicate work, and fail silently. The longer answer is below.
+
 ## The Problem: Agents Without Coordination
 
 We started with a simple setup: one agent, one job. But as operations grew, we needed specialists. A copywriter for content. A developer for code. An observer for monitoring. A manager for coordination. Suddenly we had five agents, five contexts, and zero visibility into who was doing what.
@@ -49,7 +53,7 @@ Tasks are the "what." They have status (todo → in_progress → review → done
 ### Agents
 Agents are the "who." Each agent has a role, a status (idle, working, blocked), and a heartbeat timestamp. If an agent goes silent, the system knows.
 
-## The Heartbeat System
+## The Heartbeat: How Agents Stay Accountable
 
 The magic happens in the heartbeat. Every few minutes, each agent checks in:
 
@@ -78,7 +82,7 @@ Our current lineup:
 
 Each agent has a clear lane. Minion assigns work. Agents execute. Observer verifies. Jarvis handles the personal layer above it all.
 
-## Lessons Learned
+## What Mission Control Gets Right (and What We're Still Fixing)
 
 **1. Clear ownership beats smart agents.** An average agent with a clear brief outperforms a brilliant agent with ambiguity. The system enforces clarity.
 
