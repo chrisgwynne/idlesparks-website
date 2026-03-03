@@ -1,0 +1,221 @@
+Title: Project journal — Mission Control dashboard (v1)
+
+----
+
+Date: 2026-03-03
+
+----
+
+Tags: AI, Agents
+
+----
+
+Intro: ## BLOG POST — Project Journal: Mission Control dashboard (from idea to live)
+Platform: IdleSparks Blog
+Brief ref: 936017c713f502c9
+
+----
+
+Text:
+
+---
+
+Mission Control started as a simple fear.
+
+If you run a team of autonomous agents, you can’t rely on vibes.
+
+You need to know:
+
+- what’s being worked on
+- what’s blocked
+- what’s drifting
+- what actually shipped
+
+At first we tried to manage that with scattered notes and chat.
+
+It didn’t scale.
+
+So we built a dashboard.
+
+This is the story of how Mission Control went from an idea to a live system, and what we learned along the way.
+
+## The problem we were solving
+
+Autonomous agents are fast.
+
+They can also be slippery.
+
+Without a shared system of record, you get the same issues every team gets — only faster:
+
+- tasks get duplicated
+- “in progress” stops meaning anything
+- blockers hide in comments
+- review becomes guesswork
+
+We didn’t want a dashboard for vanity.
+
+We wanted an operating system.
+
+One place where:
+
+- goals become tasks
+- tasks become artifacts
+- artifacts move through review
+- the whole thing is auditable
+
+## The constraints
+
+A few constraints shaped the build.
+
+### 1) The board must be the truth
+
+If something is real, it must exist in Mission Control.
+
+If it doesn’t exist there, it’s not shipped.
+
+### 2) Status must match reality
+
+We used simple states:
+
+- backlog / todo
+- in_progress
+- peer_review
+- review
+- approved / done
+
+But we made one rule non-negotiable:
+
+No review without an attached artifact.
+
+### 3) The system must support escalation
+
+Agents get stuck.
+
+So the system needs:
+
+- a blocked lane
+- a blocked_reason
+- escalation patterns (who to ping, when)
+
+And it has to be fast to use. If logging a blocker takes five minutes, blockers won’t get logged.
+
+## The key decisions
+
+### Decision 1: make tasks small and reviewable
+
+We forced a discipline: every task needs a deliverable.
+
+That deliverable can be:
+
+- a document
+- a PR link
+- a screenshot
+- a short research note
+
+If you can’t review it, it can’t be a task.
+
+### Decision 2: bake evidence into the workflow
+
+Agent systems fail when they can claim progress without proof.
+
+So we leaned hard on evidence-first updates:
+
+- attach the draft
+- link the PR
+- show the screenshot
+
+Not “trust me.”
+
+### Decision 3: treat quality as a system problem
+
+We added a peer_review lane.
+
+That one change stopped a lot of drift.
+
+It meant an agent couldn’t be the final judge of its own output.
+
+## What shipped
+
+The first version of Mission Control shipped with the essentials:
+
+- goals and goal-driven task lists
+- a kanban board with clear statuses
+- comments that can @mention an owner
+- documents attached to tasks
+- a clear path: proposal → task → in_progress → peer_review/review
+
+The most important feature wasn’t a UI element.
+
+It was the habit it enforced: the board is where work lives.
+
+## What broke (and what we fixed)
+
+### 1) “Done” without the deliverable
+
+We hit the classic failure: a task moved to review with no document attached.
+
+The fix wasn’t “be more careful.”
+
+The fix was tightening the rules and the tooling so artifacts are required.
+
+### 2) Reliability issues in the plumbing
+
+We also hit mundane reliability issues.
+
+Example: document uploads failed when the request format was wrong. It looked like the server was broken. The real issue was simpler: we were sending the wrong shape of request.
+
+That wasn’t an agent problem. It was a workflow problem.
+
+Once we clarified the API contract and used JSON `{title, content}`, the pipeline recovered.
+
+### 3) Notifications are a bottleneck
+
+A dashboard is only useful if people see what changed.
+
+We learned quickly that notifier reliability matters.
+
+Intermittent notifications create silent stalls.
+
+So reliability monitoring (and evidence in every handoff) became part of the standard.
+
+## What we’d do differently
+
+1) Build the review gates earlier.
+
+2) Make “stuck since” more visible.
+
+3) Add a tighter summary view for the human approver.
+
+None of these are flashy.
+
+All of them are what make an agent system feel reliable.
+
+## The takeaway
+
+Mission Control isn’t a dashboard.
+
+It’s a contract.
+
+A contract that says:
+
+- work is visible
+- work is reviewable
+- work is provable
+
+And when the contract breaks, we fix the system, not the story we tell about it.
+
+If you want autonomous agents to ship real output, you need that contract.
+
+---
+
+Summary: Chronicle of how the Mission Control dashboard was built: the problem, constraints, key decisions (evidence-first + review gates), what shipped, what broke, and lessons.
+
+Assumptions / Flags:
+- [ASSUMED: The reader knows basic kanban terms; kept explanations plain and focused on the agent-specific parts.]
+- [VERIFY: Specific shipped feature list should be cross-checked against current Mission Control capabilities before publishing.]
+
+Next handoff: Minion → peer review → approval → Xalt (distribution)
+
+----
+
+UUID: 8200043f-efcb-4aec-b008-c442b95d2e9d
