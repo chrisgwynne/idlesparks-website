@@ -1,0 +1,195 @@
+Title: Blog post — From goal to shipped (v1)
+
+----
+
+Date: 2026-03-03
+
+----
+
+Tags: AI, Agents
+
+----
+
+Intro: ## BLOG POST — From goal to shipped: how work flows through Mission Control
+Platform: IdleSparks Blog
+Brief ref: 2450a9680c5c0332
+
+----
+
+Text:
+
+---
+
+Most teams don’t fail because they lack ideas.
+
+They fail because ideas don’t turn into shipped work.
+
+In an agent-driven org, that gap gets worse if you don’t build a clean pipeline. Agents can generate tasks all day, and they can even do real work. But without a clear flow, you end up with noise, drift, and “done” that isn’t real.
+
+Mission Control is our answer.
+
+It’s the system that moves work from a goal to a deliverable — with proof.
+
+This post is an end-to-end walkthrough of that flow.
+
+## Step 0: start with a goal (direction, not a task)
+
+A goal is the why.
+
+Examples:
+
+- publish a set of blog posts
+- improve reliability
+- launch a new product
+
+Goals are owned by a human. Agents don’t decide direction. They execute.
+
+## Step 1: proposals capture ideas without polluting the board
+
+Agents are good at suggesting work.
+
+So we give them a place to propose it.
+
+A proposal is not a task. It’s a pitch.
+
+It answers:
+
+- what should we do?
+- why does it matter?
+- what does “done” look like?
+
+Proposals protect the task board from turning into a junk drawer.
+
+## Step 2: proposals become tasks only when they are reviewable
+
+A task is a contract.
+
+Once it exists, an agent will spend time on it. That’s expensive.
+
+So before a proposal becomes a task, it has to be:
+
+- clear
+- scoped
+- aligned to a goal
+- reviewable
+
+If you can’t review it, it can’t be a task.
+
+## Step 3: todo → in_progress
+
+When a task is assigned, an agent picks it up.
+
+The first thing it does is post a kickoff comment:
+
+- what it will deliver
+- what risks exist
+- what it needs (if anything)
+
+Then it moves the task to `in_progress`.
+
+This creates visibility. People can see what’s active and why.
+
+## Step 4: artifacts get attached (proof, not promises)
+
+In Mission Control, work is not real until it’s attached.
+
+For writing tasks, that means a document attached in the Documents tab.
+
+For engineering tasks, it might be a PR link and a screenshot.
+
+The rule is simple:
+
+- no artifact → no review
+
+This prevents status theatre.
+
+## Step 5: peer_review (quality before approval)
+
+This is the lane most agent systems skip.
+
+It’s also where quality gets real.
+
+When an agent finishes work, it moves the task to `peer_review`.
+
+A peer (another agent) checks:
+
+- does the artifact exist?
+- does it match the brief?
+- are claims verifiable?
+- does it meet standards (like readability targets)?
+
+If changes are needed, the author revises.
+
+If it passes, the task moves forward.
+
+## Step 6: review (final approval)
+
+After peer review, the task goes to `review`.
+
+This is where the human approver decides:
+
+- approve and ship
+- request changes
+- reject
+
+Agents don’t self-publish.
+
+This keeps the brand voice and risk decisions human-owned.
+
+## Step 7: approved → done
+
+When the task is approved, it can be marked done.
+
+At that point, it becomes part of the system’s memory.
+
+We can look back and see:
+
+- what shipped
+- when it shipped
+- what evidence exists
+
+That audit trail is the whole point.
+
+## What happens when things go wrong
+
+Two common failure cases are handled explicitly.
+
+### Blocked tasks
+
+If an agent can’t proceed, it moves the task to `blocked` and sets a `blocked_reason`.
+
+The blocked_reason must say:
+
+- what is blocking
+- who can unblock it
+- what will happen next
+
+No silent stalls.
+
+### Missing artifacts
+
+If a task is moved to review without an artifact, it gets bounced back.
+
+No artifact, no forward motion.
+
+## The takeaway
+
+Mission Control is not a dashboard.
+
+It’s a pipeline.
+
+A pipeline that turns goals into work you can review, approve, and trust.
+
+---
+
+Summary: End-to-end explanation of work flowing through Mission Control: goals → proposals → tasks → in_progress → artifacts → peer_review → review → done, plus what happens when things block.
+
+Assumptions / Flags:
+- [ASSUMED: The reader understands basic kanban terms; focused on the agent-specific gates (artifacts, peer_review, blocked_reason).]
+- [VERIFY: Exact status names and lane ordering should match current Mission Control UI (confirm before publishing if it changed).]
+
+Next handoff: Minion → peer review → approval → Xalt (distribution)
+
+----
+
+UUID: bd7a8a12-0082-43c3-9b86-3b5fdd8b798f
