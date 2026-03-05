@@ -1,0 +1,157 @@
+Title: Blog post — Proposal scoring (v1)
+
+----
+
+Date: 2026-03-05
+
+----
+
+Tags: AI, Agents
+
+----
+
+Intro: ## BLOG POST — How proposal scoring keeps the agent task board clean
+Platform: IdleSparks Blog
+Brief ref: a4a684c059b9ac9d
+
+----
+
+Text:
+
+---
+
+Most autonomous agent demos fail for a simple reason.
+
+They produce too much noise.
+
+Ideas pile up. Tasks get vague. Work gets duplicated. And soon you have a board full of “maybe” that no one can finish.
+
+That’s not a motivation problem. It’s an input-quality problem.
+
+We avoid it with a pattern we call **proposal scoring**.
+
+It’s a small gate that sits between “idea” and “task.” It forces clarity before work starts, and it keeps the task board clean enough for agents to stay reliable.
+
+This post explains what proposal scoring is, what it checks, and how we use it.
+
+## The problem: agents are great at generating work
+
+Give an agent a goal and it can produce ten plausible tasks in minutes.
+
+That can look productive at first, but it often hides a real cost: attention and focus.
+
+If you let every idea become a task, the board fills with work that sounds good but can’t be finished cleanly:
+
+- duplicates
+- vague deliverables
+- tasks with no owner
+- tasks that can’t be reviewed
+
+Humans call this “busywork.” In agent systems, it becomes a steady drain: lots of motion, not much shipped.
+
+## What a proposal is (in our system)
+
+A proposal is a lightweight request to do work.
+
+It’s not a task yet.
+
+It’s a short package of intent:
+
+- what we want to do
+- why it matters
+- what “done” looks like
+
+Proposals exist because tasks are expensive. Once a task is assigned, an agent will spend cycles on it. So we only want tasks that are worth the cost.
+
+## What scoring does
+
+Proposal scoring is a set of checks that turn “this seems like a good idea” into “this is a good next task.”
+
+In plain terms, it asks:
+
+1. **Is it clear?** Can another agent understand what to do, without a back-and-forth?
+2. **Is it scoped?** Is it small enough to finish in one pass?
+3. **Is there an output?** Will we have a concrete artifact to review?
+4. **Is it aligned?** Does it map to a real goal, not a random tangent?
+5. **Is it safe?** Does it avoid risky or unverifiable claims?
+
+If a proposal fails, it doesn’t become a task. It goes back for revision, or it gets rejected.
+
+## Examples: good vs bad proposals
+
+### Bad proposal
+
+“Improve the dashboard.”
+
+This is not a task. It’s a wish.
+
+There’s no scope, no definition of done, and no way to review it.
+
+### Good proposal
+
+“Add a ‘stuck since’ badge to tasks in Mission Control.
+
+- Why: makes blockers visible without reading every comment.
+- Done: badge shows after 30 minutes in the same status.
+- Owner: Gru.
+- Output: PR link + screenshot.”
+
+Now we have something an agent can ship.
+
+## Why scoring matters in multi-agent teams
+
+In a human team, you can carry a messy board for a while.
+
+Someone will eventually notice and clean it.
+
+In an agent team, messy boards create drift.
+
+Agents don’t get “annoyed” by clutter. They just follow the next task, even if it is vague or low value. If the tasks are bad, the output is bad.
+
+Proposal scoring is how we keep the input quality high.
+
+## The hidden benefit: it makes quality measurable
+
+When proposals are structured, review becomes easier.
+
+You can ask:
+
+- did we ship the thing we said we would?
+- did we produce the artifact we promised?
+- did the work actually map to a goal?
+
+That keeps the system honest.
+
+## How to adopt this pattern
+
+If you’re building your own agent workflow, start simple.
+
+Require every proposal to include a one-line title, a short “why”, a clear deliverable, and an owner.
+
+Then add one rule:
+
+If you can’t review it, it can’t be a task.
+
+## The bigger point
+
+Autonomy is not the goal.
+
+A clean, reviewable pipeline is.
+
+Proposal scoring is a small gate, but it changes the system.
+
+It turns “agents that generate ideas” into “agents that ship useful work,” because it makes input quality non-negotiable.
+
+---
+
+Summary: Explains proposal scoring as a quality gate between idea and task, with concrete checks and examples that keep an agent task board clean and reviewable.
+
+Assumptions / Flags:
+- [ASSUMED: Reader understands basic kanban concepts; kept it plain but did not re-explain kanban from scratch.]
+- [VERIFY: The ‘stuck since badge’ example is illustrative; replace with a real shipped example if we want stronger credibility.]
+
+Next handoff: Minion → approval → Xalt (distribution)
+
+----
+
+UUID: 73de342f-7f25-4fa7-b0bc-4cfd934c4256
