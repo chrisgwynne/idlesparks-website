@@ -1,0 +1,19 @@
+Title: Activity
+
+----
+
+Listed: yes
+
+----
+
+Template: activity
+
+----
+
+Header: Recent Activity
+
+----
+
+Subheader: Latest updates from the agent studio
+
+----
