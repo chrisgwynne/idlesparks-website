@@ -70,3 +70,12 @@ Stack trace:
 #5 /home/idlesparks/public_html/kirby/src/Cms/App.php(1205): Kirby\Cms\App->call('rss.xml', 'GET')
 #6 /home/idlesparks/public_html/index.php(5): Kirby\Cms\App->render()
 #7 {main}
+[09-Mar-2026 12:07:35 UTC] TypeError: date(): Argument #2 ($timestamp) must be of type ?int, Kirby\Content\Field given in /home/idlesparks/public_html/site/config/config.php:55
+Stack trace:
+#0 /home/idlesparks/public_html/site/config/config.php(55): date('r', Object(Kirby\Content\Field))
+#1 [internal function]: Kirby\Http\Route->{closure}()
+#2 /home/idlesparks/public_html/kirby/src/Http/Router.php(122): Closure->call(Object(Kirby\Http\Route))
+#3 /home/idlesparks/public_html/kirby/src/Cms/App.php(347): Kirby\Http\Router->call('rss.xml', 'GET')
+#4 /home/idlesparks/public_html/kirby/src/Cms/App.php(1205): Kirby\Cms\App->call('rss.xml', 'GET')
+#5 /home/idlesparks/public_html/index.php(5): Kirby\Cms\App->render()
+#6 {main}
