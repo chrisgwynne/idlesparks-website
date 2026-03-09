@@ -24,27 +24,44 @@ return [
             'pattern' => 'rss.xml',
             'action'  => function () {
                 $blog = page('1_blog');
-                $articles = $blog ? $blog->children()->sortBy('date', 'desc')->limit(20) : [];
+                if (!$blog) $blog = page('blog');
+                
+                $siteTitle = site()->title()->or('Idle Sparks')->value();
+                $siteDesc = site()->description()->or('')->value();
+                $siteUrl = site()->url();
                 
                 $xml = '<?xml version="1.0" encoding="UTF-8"?>' . "\n";
                 $xml .= '<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">' . "\n";
                 $xml .= '  <channel>' . "\n";
-                $xml .= '    <title>' . htmlspecialchars(option('title')) . '</title>' . "\n";
-                $xml .= '    <link>' . site()->url() . '</link>' . "\n";
-                $xml .= '    <description>' . htmlspecialchars(site()->description()) . '</description>' . "\n";
+                $xml .= '    <title>' . htmlspecialchars($siteTitle) . '</title>' . "\n";
+                $xml .= '    <link>' . htmlspecialchars($siteUrl) . '</link>' . "\n";
+                $xml .= '    <description>' . htmlspecialchars($siteDesc) . '</description>' . "\n";
                 $xml .= '    <language>en-us</language>' . "\n";
                 $xml .= '    <lastBuildDate>' . date('r') . '</lastBuildDate>' . "\n";
-                $xml .= '    <atom:link href="' . site()->url() . '/rss.xml" rel="self" type="application/rss+xml"/>' . "\n";
+                $xml .= '    <atom:link href="' . htmlspecialchars($siteUrl) . '/rss.xml" rel="self" type="application/rss+xml"/>' . "\n";
                 
-                foreach ($articles as $article) {
-                    $xml .= '    <item>' . "\n";
-                    $xml .= '      <title>' . htmlspecialchars($article->title()->value()) . '</title>' . "\n";
-                    $xml .= '      <link>' . $article->url() . '</link>' . "\n";
-                    $xml .= '      <guid isPermaLink="true">' . $article->url() . '</guid>' . "\n";
-                    $xml .= '      <pubDate>' . date('r', $article->date()->toUnix()) . '</pubDate>' . "\n";
-                    $desc = $article->intro()->or($article->description())->value();
-                    $xml .= '      <description><![CDATA[' . $desc . ']]></description>' . "\n";
-                    $xml .= '    </item>' . "\n";
+                if ($blog) {
+                    foreach ($blog->children() as $child) {
+                        $title = $child->title()->value();
+                        $url = $child->url();
+                        $dateField = $child->date();
+                        // Check if date is not empty and convert properly
+                        if ($dateField && is_object($dateField) && method_exists($dateField, 'toUnix')) {
+                            $timestamp = (int) $dateField->toUnix();
+                            $pubDate = $timestamp > 0 ? date('r', $timestamp) : date('r');
+                        } else {
+                            $pubDate = date('r');
+                        }
+                        $desc = $child->intro()->or($child->description())->value();
+                        
+                        $xml .= '    <item>' . "\n";
+                        $xml .= '      <title>' . htmlspecialchars($title) . '</title>' . "\n";
+                        $xml .= '      <link>' . htmlspecialchars($url) . '</link>' . "\n";
+                        $xml .= '      <guid isPermaLink="true">' . htmlspecialchars($url) . '</guid>' . "\n";
+                        $xml .= '      <pubDate>' . $pubDate . '</pubDate>' . "\n";
+                        $xml .= '      <description><![CDATA[' . $desc . ']]></description>' . "\n";
+                        $xml .= '    </item>' . "\n";
+                    }
                 }
                 
                 $xml .= '  </channel>' . "\n";
