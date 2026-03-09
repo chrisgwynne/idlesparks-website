@@ -60,3 +60,13 @@ Stack trace:
 #11 /home/idlesparks/public_html/kirby/src/Cms/App.php(1205): Kirby\Cms\App->call('api/auth/login', 'POST')
 #12 /home/idlesparks/public_html/index.php(5): Kirby\Cms\App->render()
 #13 {main}
+[09-Mar-2026 12:03:56 UTC] Whoops\Exception\ErrorException: htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/idlesparks/public_html/site/config/config.php:32
+Stack trace:
+#0 [internal function]: Whoops\Run->handleError(8192, 'htmlspecialchar...', '/home/idlespark...', 32)
+#1 /home/idlesparks/public_html/site/config/config.php(32): htmlspecialchars(NULL)
+#2 [internal function]: Kirby\Http\Route->{closure}()
+#3 /home/idlesparks/public_html/kirby/src/Http/Router.php(122): Closure->call(Object(Kirby\Http\Route))
+#4 /home/idlesparks/public_html/kirby/src/Cms/App.php(347): Kirby\Http\Router->call('rss.xml', 'GET')
+#5 /home/idlesparks/public_html/kirby/src/Cms/App.php(1205): Kirby\Cms\App->call('rss.xml', 'GET')
+#6 /home/idlesparks/public_html/index.php(5): Kirby\Cms\App->render()
+#7 {main}
