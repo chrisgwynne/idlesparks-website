@@ -401,3 +401,17 @@ Stack trace:
 #9 /home/idlesparks/public_html/kirby/src/Cms/App.php(1205): Kirby\Cms\App->io(Object(Kirby\Cms\Page))
 #10 /home/idlesparks/public_html/index.php(5): Kirby\Cms\App->render()
 #11 {main}
+[01-Apr-2026 05:19:48 UTC] Error: Call to a member function url() on null in /home/idlesparks/public_html/site/templates/feed.php:12
+Stack trace:
+#0 /home/idlesparks/public_html/kirby/src/Filesystem/F.php(446): include()
+#1 /home/idlesparks/public_html/kirby/src/Filesystem/F.php(381): Kirby\Filesystem\F::loadIsolated('/home/idlespark...', Array)
+#2 /home/idlesparks/public_html/kirby/src/Filesystem/F.php(387): Kirby\Filesystem\F::Kirby\Filesystem\{closure}()
+#3 /home/idlesparks/public_html/kirby/src/Toolkit/Tpl.php(35): Kirby\Filesystem\F::load('/home/idlespark...', NULL, Array)
+#4 /home/idlesparks/public_html/kirby/src/Template/Template.php(164): Kirby\Toolkit\Tpl::load('/home/idlespark...', Array)
+#5 /home/idlesparks/public_html/kirby/src/Cms/Page.php(975): Kirby\Template\Template->render(Array)
+#6 /home/idlesparks/public_html/kirby/src/Content/VersionId.php(106): Kirby\Cms\Page->Kirby\Cms\{closure}()
+#7 /home/idlesparks/public_html/kirby/src/Cms/Page.php(953): Kirby\Content\VersionId::render(Object(Kirby\Content\VersionId), Object(Closure))
+#8 /home/idlesparks/public_html/kirby/src/Cms/App.php(795): Kirby\Cms\Page->render()
+#9 /home/idlesparks/public_html/kirby/src/Cms/App.php(1205): Kirby\Cms\App->io(Object(Kirby\Cms\Page))
+#10 /home/idlesparks/public_html/index.php(5): Kirby\Cms\App->render()
+#11 {main}
