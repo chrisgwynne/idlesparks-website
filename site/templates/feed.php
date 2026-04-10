@@ -9,7 +9,7 @@ echo '<?xml version="1.0" encoding="UTF-8"?>' . "\n";
     <description><![CDATA[<?= $site->description()->html() ?>]]></description>
     <language>en-us</language>
     <lastBuildDate><?= date('r') ?></lastBuildDate>
-    <atom:link href="<?= page('1_blog')->url() ?>/feed.xml" rel="self" type="application/rss+xml"/>
+    <atom:link href="<?= ($blog = page('1_blog')) ? $blog->url() . '/feed.xml' : site()->url() . '/feed.xml' ?>" rel="self" type="application/rss+xml"/>
     <?php
     $blog = page('1_blog');
     if($blog):
